@@ -6,3 +6,13 @@ url: https://Awayfaring.github.io
 
 aux_links:
   Template Repository: https://github.com/Awayfaring/Awayfaring.github.io
+
+# KaTeX configuration
+katex:
+  css: true
+  js: true
+  mhchem: true
+  copy_tex: true
+
+plugins:
+  - jekyll-katex
