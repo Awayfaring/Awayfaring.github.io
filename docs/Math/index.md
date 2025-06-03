@@ -1,21 +1,10 @@
 ---
-title: Math
 layout: home
-math: katex
+title: Math Test
+nav_order: 1
 ---
 
-# Math
-
-This is a page for mathematical content.
-
-Here's an example of inline math: $10x$
-
-And here's an example of display math:
-
-$$
-\frac{d}{dx}e^x = e^x
-$$
-
-You can also use other delimiters:
-- Inline: \( f(x) = x^2 \)
-- Display: \[ \int_{a}^{b} f(x) \, dx \]
+Here's a cool integral
+{% katex display %}
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+{% endkatex%}
