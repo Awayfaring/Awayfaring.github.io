@@ -16,3 +16,6 @@ gem 'rspec'
 gem 'jekyll-katex'
 
 gem 'jekyll-relative-links'
+
+gem "jekyll-github-metadata" 
+gem "jekyll-sitemap"

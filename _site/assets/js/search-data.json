@@ -1,66 +1,66 @@
 {"0": {
     "doc": "Decemember 2024.",
     "title": "Puzzle Image",
-    "content": "Oh no! The elves in charge of board games only managed to complete a couple of sets before they were distracted by playtesting the toys. Ho-ho-ho-w infuriating! . [The answer to this puzzle is a single word.] . Original Puzzle Link . Here I will have the steps in which I do the puzzle, I will have drop downs including each of the steps, and the results. First and foremost we see that the pieces of game pieces form letters. Answers . | UNO: M | Catan: I | Risk: S | Monopoly: S | Dominion: I | Scrabble: N | Sushi Go: G | Chess: O | Clue: N | Stratego: E | Bananagrams: S | . ",
-    "url": "/Puzzles/Jane%20Street/December24.html#puzzle-image",
+    "content": "Oh no! The elves in charge of board games only managed to complete a couple of sets before they were distracted by playtesting the toys. Ho-ho-ho-w infuriating! . [The answer to this puzzle is a single word.] . Original Puzzle Link . Here I will have the steps in which I do the puzzle, I will have drop downs including each of the steps, and the results. Solution First and foremost we see that the game pieces form letters. Using the game boxes/instructions in the back, we order the letter the game pieces form. | UNO: M | Catan: I | Risk: S | Monopoly: S | Dominion: I | Scrabble: N | Sushi Go: G | Chess: O | Clue: N | Stratego: E | Bananagrams: S | . We can see that the letters form the word “MISSINGONES”, and upon caferul observation you can realize that each of . ",
+    "url": "/docs/Puzzles/Jane%20Street/December24/#puzzle-image",
     
-    "relUrl": "/Puzzles/Jane%20Street/December24.html#puzzle-image"
+    "relUrl": "/docs/Puzzles/Jane%20Street/December24/#puzzle-image"
   },"1": {
     "doc": "Decemember 2024.",
     "title": "Decemember 2024.",
     "content": " ",
-    "url": "/Puzzles/Jane%20Street/December24.html",
+    "url": "/docs/Puzzles/Jane%20Street/December24/",
     
-    "relUrl": "/Puzzles/Jane%20Street/December24.html"
+    "relUrl": "/docs/Puzzles/Jane%20Street/December24/"
   },"2": {
     "doc": "Aquarium Hunt 2013.",
     "title": "Aquarium Hunt 2013.",
     "content": "December 2024 puzzle . ",
-    "url": "/Puzzles/MIT%20Puzzle%20Hunt/MIT2013.html",
+    "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/",
     
-    "relUrl": "/Puzzles/MIT%20Puzzle%20Hunt/MIT2013.html"
+    "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/"
   },"3": {
     "doc": "Feynman Technique",
     "title": "Feynman’s Technique",
     "content": "A niche technique for solving certain integrals that involves having the entire integral as a function of a newly created parameter . Not to be confused with Feynman’s Technique or Feynman Parametrization. In fact this method was originally derived by Leibniz . Let’s start with a simple example . Assume we have to solve the following integral. ∫01x7−1ln⁡xdx \\int_0^1 \\frac{x^7-1}{\\ln{x}} dx ∫01​lnxx7−1​dx Traditional methods for this will not work, in fact Integral Calculator returns a numerical estimation as it’s unable to find a closed form solution. First we parameterize the function I(α)=∫01x7α−1ln⁡xdx I(\\alpha) = \\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I(α)=∫01​lnxx7α−1​dx . We can see that our initial integral is equal to I(1)I(1)I(1) . We take the derivative of both sides with respect to the parameter. I′(α)=∂I∂α∫01x7α−1ln⁡xdx I&#x27;(\\alpha) = \\frac{\\partial I}{\\partial \\alpha}\\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I′(α)=∂α∂I​∫01​lnxx7α−1​dx Since the bounds of the integral are not functions of our parameter, and our function is continuous within said bound. We are able to “flip” the order of integration and differentiation . I′(α)=∫01∂I∂α (x7α−1ln⁡x) dx=∫017x7αln⁡xln⁡xdx=∫017x7αdx=7x7α+17α+1∣01=77α+1\\begin{aligned} I&#x27;(\\alpha) &amp;= \\int_0^1 \\frac{\\partial I}{\\partial \\alpha} \\ \\left(\\frac{x^{7\\alpha}-1}{\\ln{x}}\\right) \\ dx \\\\ &amp;= \\int_0^1 \\frac{7x^{7\\alpha}\\ln{x}}{\\ln{x}} dx \\\\ &amp;= \\int_0^1 7x^{7\\alpha} dx \\\\ &amp;= \\left. \\frac{7x^{7\\alpha + 1}}{7\\alpha + 1}\\right|_0^1 \\\\ &amp;= \\frac{7}{7\\alpha + 1} \\end{aligned}I′(α)​=∫01​∂α∂I​ (lnxx7α−1​) dx=∫01​lnx7x7αlnx​dx=∫01​7x7αdx=7α+17x7α+1​∣∣∣∣∣​01​=7α+17​​ . If we remember the fundamental theorem of calculus we know that . F(b)−F(a)=∫abf(x)dxwhere  f(x)=F′(x) F(b) - F(a) = \\int_a^b f(x) dx \\qquad \\text{where }\\ f(x) = F&#x27;(x) F(b)−F(a)=∫ab​f(x)dxwhere  f(x)=F′(x) Applying this to out context we can write that I(1)−I(0)=∫01I′(α) dα I(1) - I(0) = \\int_0^1 I&#x27;(\\alpha) \\ d\\alphaI(1)−I(0)=∫01​I′(α) dα From our original parameterization we see that if we set α=0\\alpha = 0α=0 I(0)=∫01x0−1ln⁡x=0I(0) = \\int_0^1 \\frac{x^{0}-1}{\\ln{x}}=0I(0)=∫01​lnxx0−1​=0 Therefore our equation becomes I(1)=∫01I′(α) dα=∫0177α+1 dα=ln⁡(7α+1)∣01=ln⁡8−ln⁡1=ln⁡8\\begin{aligned} I(1) &amp;= \\int_0^1 I&#x27;(\\alpha) \\ d\\alpha \\\\ &amp;= \\int_0^1 \\frac{7}{7\\alpha + 1} \\ d\\alpha \\\\ &amp;= \\left.\\ln{(7\\alpha + 1)} \\right|_0^1 \\\\ &amp;= \\ln{8} - \\ln{1} \\\\ &amp;= \\boxed{\\ln{8}} \\end{aligned}I(1)​=∫01​I′(α) dα=∫01​7α+17​ dα=ln(7α+1)∣01​=ln8−ln1=ln8​​ . Thus we arrive at our final answer ∫01x7−1ln⁡x dx=ln⁡8\\int_0^1 \\frac{x^7-1}{\\ln{x}}\\ dx = \\ln{8}∫01​lnxx7−1​ dx=ln8 . ",
-    "url": "/Math/Problem1.html#feynmans-technique",
+    "url": "/docs/Math/Problem1/#feynmans-technique",
     
-    "relUrl": "/Math/Problem1.html#feynmans-technique"
+    "relUrl": "/docs/Math/Problem1/#feynmans-technique"
   },"4": {
     "doc": "Feynman Technique",
     "title": "Feynman Technique",
     "content": " ",
-    "url": "/Math/Problem1.html",
+    "url": "/docs/Math/Problem1/",
     
-    "relUrl": "/Math/Problem1.html"
+    "relUrl": "/docs/Math/Problem1/"
   },"5": {
     "doc": "MIT Aquarium Hunt Puzzles",
     "title": "MIT Aquarium Hunt Puzzles",
     "content": "Page with my approach/Solution to some of the MIT Aquarium puzzle hunt puzzles. ",
-    "url": "/Puzzles/MIT%20Puzzle%20Hunt/",
+    "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/",
     
-    "relUrl": "/Puzzles/MIT%20Puzzle%20Hunt/"
+    "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/"
   },"6": {
     "doc": "Math",
     "title": "Math",
     "content": "This is going to be a compilation of all the cool math problems I’ve done, it’s going to be limited to algebra since inserting figures for geometry is quite tedious. ",
-    "url": "/Math/",
+    "url": "/docs/Math/",
     
-    "relUrl": "/Math/"
+    "relUrl": "/docs/Math/"
   },"7": {
     "doc": "Jane Street Puzzles",
     "title": "Jane Street Puzzles",
     "content": "Page with my approach/Solution to some Jane Street Puzzles . ",
-    "url": "/Puzzles/Jane%20Street/",
+    "url": "/docs/Puzzles/Jane%20Street/",
     
-    "relUrl": "/Puzzles/Jane%20Street/"
+    "relUrl": "/docs/Puzzles/Jane%20Street/"
   },"8": {
     "doc": "Puzzles",
     "title": "Puzzles",
     "content": "This is going to be a list of some cool puzzles I solved. ",
-    "url": "/Puzzles/",
+    "url": "/docs/Puzzles/",
     
-    "relUrl": "/Puzzles/"
+    "relUrl": "/docs/Puzzles/"
   },"9": {
     "doc": "Home",
     "title": "Home",
