@@ -1,7 +1,7 @@
 ---
-title: Puzzle
 layout: home
-math: katex
+title: Puzzles 
+nav_order: 1
 ---
 
-New Math page possibly?
+This is going to be a list of some cool puzzles I solved.

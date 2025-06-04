@@ -61,9 +61,13 @@ $$\begin{aligned}
 \end{aligned}$$
 {% endkatexmm %}
 
-
-
 ---
+{% katexmm %}
+Thus we arrive at our final answer
+$$\int_0^1 \frac{x^7-1}{\ln{x}}\ dx = \ln{8}$$
+{% endkatexmm %}
+
+___
 [Feynman's Technique]: https://en.wikipedia.org/wiki/Learning_by_teaching
 [Feynman Parametrization]: https://en.wikipedia.org/wiki/Feynman_parametrization
 [Integral Calculator]: https://www.integral-calculator.com/

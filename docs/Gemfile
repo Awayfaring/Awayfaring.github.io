@@ -14,3 +14,5 @@ gem 'rspec'
 
 # Math rendering
 gem 'jekyll-katex'
+
+gem 'jekyll-relative-links'
