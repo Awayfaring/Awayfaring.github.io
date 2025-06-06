@@ -15,7 +15,7 @@
   
 
     
-    .site-nav > ul.nav-list:first-child > li:not(:nth-child(3)) > a,
+    .site-nav > ul.nav-list:first-child > li:not(:nth-child(1)) > a,
     .site-nav > ul.nav-list:first-child > li > ul > li a {
       background-image: none;
     }
@@ -25,12 +25,12 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(1) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(1) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(1) > ul.nav-list {
       display: block;
     }
   </style>
@@ -50,7 +50,7 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | Jeremy Ma’s Website</title>
+<title>Home | Jeremy’s Website</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Home" />
 <meta property="og:locale" content="en_US" />
@@ -58,12 +58,12 @@
 <meta property="og:description" content="A website compiling some personal projects and some other things." />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Jeremy Ma’s Website" />
+<meta property="og:site_name" content="Jeremy’s Website" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A website compiling some personal projects and some other things.","headline":"Home","name":"Jeremy Ma’s Website","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"A website compiling some personal projects and some other things.","headline":"Home","name":"Jeremy’s Website","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="side-bar">
   <div class="site-header" role="banner">
     <a href="/" class="site-title lh-tight">
-  Jeremy Ma's Website
+  Jeremy's Website
 
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <nav aria-label="Main" id="site-nav" class="site-nav">
   
   
-    <ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
+    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Problem1/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/docs/Puzzles/Jane%20Street/" class="nav-list-link">Jane Street Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/Jane%20Street/December24/" class="nav-list-link">Decemember 2024.</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in MIT Aquarium Hunt Puzzles category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/" class="nav-list-link">MIT Aquarium Hunt Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/" class="nav-list-link">Aquarium Hunt 2013.</a></li></ul></li></ul></li><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li></ul>
+      </button><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/" class="nav-list-link">MIT Aquarium Hunt Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/" class="nav-list-link">Aquarium Hunt 2013.</a></li></ul></li></ul></li></ul>
   
 </nav>
 
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="search" role="search">
   <div class="search-input-wrap">
-    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Jeremy Ma's Website" aria-label="Search Jeremy Ma's Website" autocomplete="off">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Jeremy's Website" aria-label="Search Jeremy's Website" autocomplete="off">
     <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
   </div>
   <div id="search-results" class="search-results"></div>
@@ -263,37 +263,21 @@ document.addEventListener("DOMContentLoaded", function() {
       <div id="main-content" class="main-content">
         <main>
           
-            <p>This is a <em>bare-minimum</em> template to create a Jekyll site that uses the <a href="https://just-the-docs.github.io/just-the-docs/">Just the Docs</a> theme. You can easily set the created site to be published on <a href="https://docs.github.com/en/pages">GitHub Pages</a> – the <a href="https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md">README</a> file explains how to do that, along with other details.</p>
+            <h1 id="welcome-to-my-website">
+  
+  
+    <a href="#welcome-to-my-website" class="anchor-heading" aria-labelledby="welcome-to-my-website"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Welcome to my website!.
+  
+  
+</h1>
+    
 
-<p>If <a href="https://jekyllrb.com">Jekyll</a> is installed on your computer, you can also build and preview the created site <em>locally</em>. This lets you test changes before committing them, and avoids waiting for GitHub Pages.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> And you will be able to deploy your local build to a different platform than GitHub Pages.</p>
+<blockquote class="important">
+  <p>This website is currently <strong>WIP</strong> I will be adding alot more stuff in the coming weeks.</p>
+</blockquote><hr />
+<p>I’m Jeremy, a Freshman at the <a href="https://en.wikipedia.org/wiki/University_of_Washington">University of Washington</a> studying Computer Science and Math.</p>
 
-<p>More specifically, the created site:</p>
-
-<ul>
-  <li>uses a gem-based approach, i.e. uses a <code class="language-plaintext highlighter-rouge">Gemfile</code> and loads the <code class="language-plaintext highlighter-rouge">just-the-docs</code> gem</li>
-  <li>uses the <a href="https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/">GitHub Pages / Actions workflow</a> to build and publish the site on GitHub Pages</li>
-</ul>
-
-<p>Other than that, you’re free to customize sites that you create with this template, however you like. You can easily change the versions of <code class="language-plaintext highlighter-rouge">just-the-docs</code> and Jekyll it uses, as well as adding further plugins.</p>
-
-<p><a href="https://just-the-docs.github.io/just-the-docs/">Browse our documentation</a> to learn more about how to use this theme.</p>
-
-<p>To get started with creating a site, simply:</p>
-
-<ol>
-  <li>click “<a href="https://github.com/just-the-docs/just-the-docs-template/generate">use this template</a>” to create a GitHub repository</li>
-  <li>go to Settings &gt; Pages &gt; Build and deployment &gt; Source, and select GitHub Actions</li>
-</ol>
-
-<p>If you want to maintain your docs in the <code class="language-plaintext highlighter-rouge">docs</code> directory of an existing project repo, see <a href="https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo">Hosting your docs from an existing project repo</a> in the template README.</p><hr />
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1">
-      <p><a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site">It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub</a>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>This website will be a combination of cool problems/puzzles I solved and some personal projects of mine.</p>
 
           
 

@@ -1,5 +1,5 @@
 # Site settings
-title: Jeremy Ma's Website
+title: Jeremy's Website
 description: A website compiling some personal projects and some other things.
 theme: just-the-docs
 url: https://Awayfaring.github.io
@@ -131,3 +131,10 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+
+# Warning Box
+callouts:
+  important:
+    title: Important
+    color: green
+  
