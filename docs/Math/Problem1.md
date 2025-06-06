@@ -14,11 +14,12 @@ Not to be confused with [Feynman's Technique] or [Feynman Parametrization]. In f
 ---
 Let's start with a simple example 
 
-Assume we have to solve the following integral.
+We're give the following integral to solve.
 {% katex display %}
 \int_0^1 \frac{x^7-1}{\ln{x}} dx
 {% endkatex %}
 Traditional methods for this will not work, in fact [Integral Calculator] returns a numerical estimation as it's unable to find a closed form solution.  
+In this scenario we apply Feynman's technique to solve the integral.
 
 ---
 First we parameterize the function
@@ -47,7 +48,7 @@ $$\begin{aligned}
 If we remember the fundamental theorem of calculus we know that 
 {% katexmm %}
 $$ F(b) - F(a) = \int_a^b f(x) dx \qquad \text{where  }\ f(x) = F'(x) $$
-Applying this to out context we can write that 
+Applying this to our context we can write that 
 $$ I(1) - I(0) = \int_0^1 I'(\alpha) \ d\alpha$$
 From our original parameterization we see that if we set $\alpha = 0$ 
 $$I(0) = \int_0^1 \frac{x^{0}-1}{\ln{x}}=0$$
@@ -67,7 +68,6 @@ Thus we arrive at our final answer
 $$\int_0^1 \frac{x^7-1}{\ln{x}}\ dx = \ln{8}$$
 {% endkatexmm %}
 
-___
 [Feynman's Technique]: https://en.wikipedia.org/wiki/Learning_by_teaching
 [Feynman Parametrization]: https://en.wikipedia.org/wiki/Feynman_parametrization
 [Integral Calculator]: https://www.integral-calculator.com/
