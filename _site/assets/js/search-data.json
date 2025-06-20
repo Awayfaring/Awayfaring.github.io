@@ -14,61 +14,75 @@
     "relUrl": "/docs/Puzzles/Jane%20Street/December24/"
   },"2": {
     "doc": "Aquarium Hunt 2013.",
+    "title": "Aquarium Hunt 2013",
+    "content": " ",
+    "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#aquarium-hunt-2013",
+    
+    "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#aquarium-hunt-2013"
+  },"3": {
+    "doc": "Aquarium Hunt 2013.",
+    "title": "Link to the Hunt, includes checker",
+    "content": "This puzzle hunt has 9 parts, 8 feeder parts and 1 META. Below I will have my approach along with the solution for each of the puzzles. 1. Alter Rivals . Link to Part 1 . Approach and Solution Looking past the converstion between the “Customer” and “You”. We are greeted by the main body of the puzzle, which in this case happens to be a block of text. Skimming thorugh the text 2 things immediately stand out . | Almost nothing is capitalized, The first word of every sentence is lowercase, the pronoun “I” which is always uppercase is never capitalized in this block of text. | Since a majority of the text is lowercase the words that are capitalized stand out greatly. | . As such I decided to focus on these select words/letters. They are the following: . | Visa | Boeing | Omega | AT&amp;T | Duracell | MegaBloks | . My first instinct was to take the letters that were capitalized (i.e V from Visa) and see if they form anything meaningful. Unfortunatley the letters “VBOATTDM”, or “VBOADM”/”VBOTDM” (Using only the A or T from AT&amp;T) didn’t anagram or decipher into any meaningful words. After a period of thinking I noticed a detail I glossed over earlier. All of the aforementioned words were large brands/companies, using the hint provided by the title of the puzzle I decided to look into the “rivals” of these companies. Here I compiled a list. | Visa: American Express, MasterCard, Discover | Boeing: Airbus | Omega: Rolex, Patek, Breitling | AT&amp;T: T-Mobile, Version | Duracell: Energizer, Panasonic | MegaBloks: Lego | . Taking the first letter of the categories I’m fairly certain in we have: . _ A _ _ _ L . After some guess and check, the only word I got that made any sense was . MARVEL . In which you select, MasterCard, Airbus, Rolex, Verison, Energizer, Lego. Marvel however is not yet the answer. Using the “Alter Rivals” theme provided by the title we find the “rival” for Marvel which is DC also known as DC Comics . 2. Parallel Enclousures . Link to Part 2 . 3. Company Timpani . Link to Part 3 . Approach and Solution This part was easy, just some wordplay . | Reimburse (Pay) &amp; Friend (Pal) -&gt; PayPal | Slime (Goo) &amp; Seabird (Gull) -&gt; Google | First name of Hermione (Emma) &amp; Boy child of Father (Son) -&gt; Amazon | Phone Downloadable (App) &amp; Boat Shell (Hull) -&gt; Apple | Really Tiny (Micro) &amp; Fluffy (Soft) -&gt; Microsoft | British Fool (Twit) &amp; Sound of Hesitation (Uhh) -&gt; Twitter | Chains are like this (Linked) &amp; Not out (in) -&gt; LinkedIn | Not me (You) &amp; Cylinder (Tube) -&gt; Youtube | . The numbers on the right side I assumed represented the letter we took in the word. \\ . | PayPal(1) -&gt; P | Google(3) -&gt; O | Amazon(2) -&gt; M | Apple(1) -&gt; A | Microsoft(2) -&gt; I | Twitter(2) -&gt; W | Linkedin(2) -&gt; I | Youtube(5) -&gt; U | . However this doesnt make any sense, so back to the drawing board. This time around I pay more attention to the provided flavor text. In the conversation it seems that the individual we are trying to help is in some convention with many CEO’s that “don’t even seem to know the names of their companies”. This makes me believe that rather the number is referring to a letter within the name of the CEO rather than the company. Doing a little research (remember the year that this was made is 2013), here are the CEOs for the companies above . | PayPal -&gt; Peter Thiel(1) -&gt; P | Google -&gt; Larry Page(3) -&gt; R | Amazon -&gt; Jeff Bezos(2) -&gt; E | Apple -&gt; Tim Cook(1) -&gt; T | Microsoft(2) -&gt; Steve Ballmer -&gt; T | Twitter(2) -&gt; Dick Costolo -&gt; I | Linkedin(2) -&gt; Jeff Weiner -&gt; E | Youtube(5) -&gt; Salar Kamangar -&gt; R | . The letters we extracted spells PRETTIER which is the answer for this part. Part 4: Consolidations . Link to Part 4 . Part 5: Pneumatic Pneumonia . Link to Part 5 . Part 6: Cattlegories . Link to Part 6 . Approach and Solution In my opinion the easiest of the puzzles. The puzzle’s title and flavor text clues us that the theme would about cuts of meat. Immediately here is what I got: . | Picture of Chuck Norris -&gt; Chuck Steak | Picture of Shoulder -&gt; Shoulder | Picture of Burger (Filet O Fish) -&gt; Filet | Picture of Skirt -&gt; Skirt Steak | Picture of Circle -&gt; Round | Picture of Map (flank maneuver) -&gt; Flank Steak | . After a bit of research the weird tools displayed are referred to as Shank, which also happens to be a cut of meat. I also found that for the pottery picture the tools displayed are called Ribs which also refers to a cut of meat . Following the same pattern as before, we use the number inside each image to extract the corresponding letter inside the word. After doing that and arranging them left to right, top to bottom we are left with our final answer Ranchero . Part 7: Contents Included . Link to Part 7 . Part 8: Tournament of Numbers . Link to Part 8 . META . Link to META . ",
+    "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#link-to-the-hunt-includes-checker",
+    
+    "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#link-to-the-hunt-includes-checker"
+  },"4": {
+    "doc": "Aquarium Hunt 2013.",
     "title": "Aquarium Hunt 2013.",
-    "content": "December 2024 puzzle . ",
+    "content": " ",
     "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/",
     
     "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/"
-  },"3": {
+  },"5": {
     "doc": "Feynman Technique",
     "title": "Feynman’s Technique",
-    "content": "A niche technique for solving certain integrals that involves having the entire integral as a function of a newly created parameter . Not to be confused with Feynman’s Technique or Feynman Parametrization. In fact this method was originally derived by Leibniz . Let’s start with a simple example . Assume we have to solve the following integral. ∫01x7−1ln⁡xdx \\int_0^1 \\frac{x^7-1}{\\ln{x}} dx ∫01​lnxx7−1​dx Traditional methods for this will not work, in fact Integral Calculator returns a numerical estimation as it’s unable to find a closed form solution. First we parameterize the function I(α)=∫01x7α−1ln⁡xdx I(\\alpha) = \\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I(α)=∫01​lnxx7α−1​dx . We can see that our initial integral is equal to I(1)I(1)I(1) . We take the derivative of both sides with respect to the parameter. I′(α)=∂I∂α∫01x7α−1ln⁡xdx I&#x27;(\\alpha) = \\frac{\\partial I}{\\partial \\alpha}\\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I′(α)=∂α∂I​∫01​lnxx7α−1​dx Since the bounds of the integral are not functions of our parameter, and our function is continuous within said bound. We are able to “flip” the order of integration and differentiation . I′(α)=∫01∂I∂α (x7α−1ln⁡x) dx=∫017x7αln⁡xln⁡xdx=∫017x7αdx=7x7α+17α+1∣01=77α+1\\begin{aligned} I&#x27;(\\alpha) &amp;= \\int_0^1 \\frac{\\partial I}{\\partial \\alpha} \\ \\left(\\frac{x^{7\\alpha}-1}{\\ln{x}}\\right) \\ dx \\\\ &amp;= \\int_0^1 \\frac{7x^{7\\alpha}\\ln{x}}{\\ln{x}} dx \\\\ &amp;= \\int_0^1 7x^{7\\alpha} dx \\\\ &amp;= \\left. \\frac{7x^{7\\alpha + 1}}{7\\alpha + 1}\\right|_0^1 \\\\ &amp;= \\frac{7}{7\\alpha + 1} \\end{aligned}I′(α)​=∫01​∂α∂I​ (lnxx7α−1​) dx=∫01​lnx7x7αlnx​dx=∫01​7x7αdx=7α+17x7α+1​∣∣∣∣∣​01​=7α+17​​ . If we remember the fundamental theorem of calculus we know that . F(b)−F(a)=∫abf(x)dxwhere  f(x)=F′(x) F(b) - F(a) = \\int_a^b f(x) dx \\qquad \\text{where }\\ f(x) = F&#x27;(x) F(b)−F(a)=∫ab​f(x)dxwhere  f(x)=F′(x) Applying this to out context we can write that I(1)−I(0)=∫01I′(α) dα I(1) - I(0) = \\int_0^1 I&#x27;(\\alpha) \\ d\\alphaI(1)−I(0)=∫01​I′(α) dα From our original parameterization we see that if we set α=0\\alpha = 0α=0 I(0)=∫01x0−1ln⁡x=0I(0) = \\int_0^1 \\frac{x^{0}-1}{\\ln{x}}=0I(0)=∫01​lnxx0−1​=0 Therefore our equation becomes I(1)=∫01I′(α) dα=∫0177α+1 dα=ln⁡(7α+1)∣01=ln⁡8−ln⁡1=ln⁡8\\begin{aligned} I(1) &amp;= \\int_0^1 I&#x27;(\\alpha) \\ d\\alpha \\\\ &amp;= \\int_0^1 \\frac{7}{7\\alpha + 1} \\ d\\alpha \\\\ &amp;= \\left.\\ln{(7\\alpha + 1)} \\right|_0^1 \\\\ &amp;= \\ln{8} - \\ln{1} \\\\ &amp;= \\boxed{\\ln{8}} \\end{aligned}I(1)​=∫01​I′(α) dα=∫01​7α+17​ dα=ln(7α+1)∣01​=ln8−ln1=ln8​​ . Thus we arrive at our final answer ∫01x7−1ln⁡x dx=ln⁡8\\int_0^1 \\frac{x^7-1}{\\ln{x}}\\ dx = \\ln{8}∫01​lnxx7−1​ dx=ln8 . ",
+    "content": "A niche technique for solving certain integrals that involves having the entire integral as a function of a newly created parameter . Not to be confused with Feynman’s Technique or Feynman Parametrization. In fact this method was originally derived by Leibniz . Let’s start with a simple example . We’re give the following integral to solve. ∫01x7−1ln⁡xdx \\int_0^1 \\frac{x^7-1}{\\ln{x}} dx ∫01​lnxx7−1​dx Traditional methods for this will not work, in fact Integral Calculator returns a numerical estimation as it’s unable to find a closed form solution. In this scenario we apply Feynman’s technique to solve the integral. First we parameterize the function I(α)=∫01x7α−1ln⁡xdx I(\\alpha) = \\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I(α)=∫01​lnxx7α−1​dx . We can see that our initial integral is equal to I(1)I(1)I(1) . We take the derivative of both sides with respect to the parameter. I′(α)=∂I∂α∫01x7α−1ln⁡xdx I&#x27;(\\alpha) = \\frac{\\partial I}{\\partial \\alpha}\\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I′(α)=∂α∂I​∫01​lnxx7α−1​dx Since the bounds of the integral are not functions of our parameter, and our function is continuous within said bound. We are able to “flip” the order of integration and differentiation . I′(α)=∫01∂I∂α (x7α−1ln⁡x) dx=∫017x7αln⁡xln⁡xdx=∫017x7αdx=7x7α+17α+1∣01=77α+1\\begin{aligned} I&#x27;(\\alpha) &amp;= \\int_0^1 \\frac{\\partial I}{\\partial \\alpha} \\ \\left(\\frac{x^{7\\alpha}-1}{\\ln{x}}\\right) \\ dx \\\\ &amp;= \\int_0^1 \\frac{7x^{7\\alpha}\\ln{x}}{\\ln{x}} dx \\\\ &amp;= \\int_0^1 7x^{7\\alpha} dx \\\\ &amp;= \\left. \\frac{7x^{7\\alpha + 1}}{7\\alpha + 1}\\right|_0^1 \\\\ &amp;= \\frac{7}{7\\alpha + 1} \\end{aligned}I′(α)​=∫01​∂α∂I​ (lnxx7α−1​) dx=∫01​lnx7x7αlnx​dx=∫01​7x7αdx=7α+17x7α+1​∣∣∣∣∣​01​=7α+17​​ . If we remember the fundamental theorem of calculus we know that . F(b)−F(a)=∫abf(x)dxwhere  f(x)=F′(x) F(b) - F(a) = \\int_a^b f(x) dx \\qquad \\text{where }\\ f(x) = F&#x27;(x) F(b)−F(a)=∫ab​f(x)dxwhere  f(x)=F′(x) Applying this to our context we can write that I(1)−I(0)=∫01I′(α) dα I(1) - I(0) = \\int_0^1 I&#x27;(\\alpha) \\ d\\alphaI(1)−I(0)=∫01​I′(α) dα From our original parameterization we see that if we set α=0\\alpha = 0α=0 I(0)=∫01x0−1ln⁡x=0I(0) = \\int_0^1 \\frac{x^{0}-1}{\\ln{x}}=0I(0)=∫01​lnxx0−1​=0 Therefore our equation becomes I(1)=∫01I′(α) dα=∫0177α+1 dα=ln⁡(7α+1)∣01=ln⁡8−ln⁡1=ln⁡8\\begin{aligned} I(1) &amp;= \\int_0^1 I&#x27;(\\alpha) \\ d\\alpha \\\\ &amp;= \\int_0^1 \\frac{7}{7\\alpha + 1} \\ d\\alpha \\\\ &amp;= \\left.\\ln{(7\\alpha + 1)} \\right|_0^1 \\\\ &amp;= \\ln{8} - \\ln{1} \\\\ &amp;= \\boxed{\\ln{8}} \\end{aligned}I(1)​=∫01​I′(α) dα=∫01​7α+17​ dα=ln(7α+1)∣01​=ln8−ln1=ln8​​ . Thus we arrive at our final answer ∫01x7−1ln⁡x dx=ln⁡8\\int_0^1 \\frac{x^7-1}{\\ln{x}}\\ dx = \\ln{8}∫01​lnxx7−1​ dx=ln8 . ",
     "url": "/docs/Math/Problem1/#feynmans-technique",
     
     "relUrl": "/docs/Math/Problem1/#feynmans-technique"
-  },"4": {
+  },"6": {
     "doc": "Feynman Technique",
     "title": "Feynman Technique",
     "content": " ",
     "url": "/docs/Math/Problem1/",
     
     "relUrl": "/docs/Math/Problem1/"
-  },"5": {
+  },"7": {
     "doc": "MIT Aquarium Hunt Puzzles",
     "title": "MIT Aquarium Hunt Puzzles",
     "content": "Page with my approach/Solution to some of the MIT Aquarium puzzle hunt puzzles. ",
     "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/",
     
     "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/"
-  },"6": {
+  },"8": {
     "doc": "Math",
     "title": "Math",
     "content": "This is going to be a compilation of all the cool math problems I’ve done, it’s going to be limited to algebra since inserting figures for geometry is quite tedious. ",
     "url": "/docs/Math/",
     
     "relUrl": "/docs/Math/"
-  },"7": {
+  },"9": {
     "doc": "Jane Street Puzzles",
     "title": "Jane Street Puzzles",
     "content": "Page with my approach/Solution to some Jane Street Puzzles . ",
     "url": "/docs/Puzzles/Jane%20Street/",
     
     "relUrl": "/docs/Puzzles/Jane%20Street/"
-  },"8": {
+  },"10": {
     "doc": "Puzzles",
     "title": "Puzzles",
     "content": "This is going to be a list of some cool puzzles I solved. ",
     "url": "/docs/Puzzles/",
     
     "relUrl": "/docs/Puzzles/"
-  },"9": {
+  },"11": {
     "doc": "Home",
     "title": "Welcome to my website!.",
     "content": "This website is currently WIP I will be adding alot more stuff in the coming weeks. I’m Jeremy, a Freshman at the University of Washington studying Computer Science and Math. This website will be a combination of cool problems/puzzles I solved and some personal projects of mine. ",
     "url": "/#welcome-to-my-website",
     
     "relUrl": "/#welcome-to-my-website"
-  },"10": {
+  },"12": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
