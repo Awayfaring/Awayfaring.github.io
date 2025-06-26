@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </h3>
     
 
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/1.pdf">Part 1</a></p>
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/1.pdf">Customer 1</a></p>
 
 <details>
   <summary size=""> Approach and Solution </summary>
@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </h3>
     
 
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/2.pdf">Part 2</a></p><hr />
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/2.pdf">Customer 2</a></p><hr />
 <h3 id="3-company-timpani">
   
   
@@ -371,7 +371,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </h3>
     
 
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/3.pdf">Part 3</a></p>
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/3.pdf">Customer 3</a></p>
 
 <details>
   <summary> Approach and Solution </summary>
@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <p>This time around I pay more attention to the provided flavor text. In the conversation it seems that the individual we are trying to help is in some convention with many CEO’s that “<em>don’t even seem to know the names of their companies</em>”.</p>
 
   <p>This makes me believe that rather the number is referring to a letter within the name of the CEO rather than the company.
-Doing a little research (remember the year that this was made is 2013), here are the CEOs for the companies above</p>
+Doing a little research (remember the year that this was  made is 2013), here are the CEOs for the companies above</p>
   <ul>
     <li>PayPal -&gt; <em>Peter Thiel</em>(1) -&gt; <strong>P</strong></li>
     <li>Google -&gt; <em>Larry Page</em>(3) -&gt; <strong>R</strong></li>
@@ -420,36 +420,67 @@ Doing a little research (remember the year that this was made is 2013), here are
 
   <p>The letters we extracted spells <strong>PRETTIER</strong> which is the answer for this part.</p>
 </details><hr />
-<h3 id="part-4-consolidations">
+<h3 id="customer-4-consolidations">
   
   
-    <a href="#part-4-consolidations" class="anchor-heading" aria-labelledby="part-4-consolidations"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 4: Consolidations
-  
-  
-</h3>
-    
-
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/4.pdf">Part 4</a></p><hr />
-<h3 id="part-5-pneumatic-pneumonia">
-  
-  
-    <a href="#part-5-pneumatic-pneumonia" class="anchor-heading" aria-labelledby="part-5-pneumatic-pneumonia"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 5: Pneumatic Pneumonia
+    <a href="#customer-4-consolidations" class="anchor-heading" aria-labelledby="customer-4-consolidations"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Customer 4: Consolidations
   
   
 </h3>
     
 
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/5.pdf">Part 5</a></p><hr />
-<h3 id="part-6-cattlegories">
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/4.pdf">Customer 4</a></p>
+
+<details>
+  <summary> Approach and Solution </summary>
+
+  <p>Reading the flavor text for this puzzle is <strong>vital</strong>, the character representing “us” replies “..Do you mean the year 2000” in response to the other character saying they only recognize consoles made after <em>1111101000</em>.</p>
+
+  <p>With this in mind, I marked all consoles made after the year</p>
+
+  <p><img src="/assets/images/MIT_Puzzle_Hunt_Images/2013_Part4_Img1.jpg" alt="" /></p>
+
+  <p>Treating the areas marked as <strong>1</strong> and those not as <strong>0</strong>, we can extract the following binary strings from the image</p>
+
+  <ul>
+    <li>01110 -&gt; 14</li>
+    <li>01001 -&gt; 9</li>
+    <li>01110 -&gt; 14</li>
+    <li>10100 -&gt; 20</li>
+    <li>00101 -&gt; 5</li>
+    <li>01110 -&gt; 14</li>
+    <li>00100 -&gt; 4</li>
+    <li>01111 -&gt; 15</li>
+  </ul>
+
+  <p>Now taking using a 1-indexed alphabet the numbers correspond to <strong>N I N T E N D O</strong>.
+HOWEVER, this is not the correct solution, entering this into the checker will result in a special message telling you to look closer.
+The only thing that makes sense would be to go through a similar process except this time we mark every console that was made by Nintendo.</p>
+
+  <p><img src="/assets/images/MIT_Puzzle_Hunt_Images/2013_Part4_Img2.jpg" alt="" /></p>
+
+  <p>Doing the same extraction we end up with our final answer: <strong>Headache</strong></p>
+</details><hr />
+<h3 id="customer-5-pneumatic-pneumonia">
   
   
-    <a href="#part-6-cattlegories" class="anchor-heading" aria-labelledby="part-6-cattlegories"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 6: Cattlegories
+    <a href="#customer-5-pneumatic-pneumonia" class="anchor-heading" aria-labelledby="customer-5-pneumatic-pneumonia"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Customer 5: Pneumatic Pneumonia
   
   
 </h3>
     
 
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/6.pdf">Part 6</a></p>
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/5.pdf">Customer 5</a></p><hr />
+<h3 id="customer-6-cattlegories">
+  
+  
+    <a href="#customer-6-cattlegories" class="anchor-heading" aria-labelledby="customer-6-cattlegories"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Customer 6: Cattlegories
+  
+  
+</h3>
+    
+
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/6.pdf">Customer 6</a></p>
 
 <details>
   <summary>Approach and Solution</summary>
@@ -471,26 +502,48 @@ Immediately here is what I got:</p>
   <p>Following the same pattern as before, we use the number inside each image to extract the corresponding letter inside the word. After doing that and arranging them left to right, top to bottom we are left with our final answer <strong>Ranchero</strong></p>
 
 </details><hr />
-<h3 id="part-7-contents-included">
+<h3 id="customer-7-contents-included">
   
   
-    <a href="#part-7-contents-included" class="anchor-heading" aria-labelledby="part-7-contents-included"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 7: Contents Included
-  
-  
-</h3>
-    
-
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/7.pdf">Part 7</a></p><hr />
-<h3 id="part-8-tournament-of-numbers">
-  
-  
-    <a href="#part-8-tournament-of-numbers" class="anchor-heading" aria-labelledby="part-8-tournament-of-numbers"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 8: Tournament of Numbers
+    <a href="#customer-7-contents-included" class="anchor-heading" aria-labelledby="customer-7-contents-included"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Customer 7: Contents Included
   
   
 </h3>
     
 
-<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/8.pdf">Part 8</a></p><hr />
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/7.pdf">Customer 7</a></p>
+
+<details>
+  <summary> Approach and Solution </summary>
+
+  <p>This problem is very straightforward, the flavor text hints that the individual is entertained by something, using this information and the fact that this puzzle is called <em>Contents Included</em> I made the assumption that the “flashcards” give us the content of a certain game/activity and we need to guess them.</p>
+
+  <p>Here’s what I got for each of them, left to right, top to bottom. I also highlighted the letter that would fall in the box</p>
+
+  <ul>
+    <li><strong>C</strong>heckers</li>
+    <li>B<strong>a</strong>rrel O’ Monkeys</li>
+    <li>Mo<strong>n</strong>opoly</li>
+    <li>Hungry Hungry H<strong>i</strong>ppos</li>
+    <li>Mou<strong>s</strong>etrap</li>
+    <li><strong>T</strong>aboo</li>
+    <li>Battl<strong>e</strong>ship</li>
+    <li>Bananag<strong>r</strong>ams</li>
+  </ul>
+
+  <p>Using the highlighted (unfortunately it doesn’t really stand out) letters we get our final answer: <strong>CANISTER</strong></p>
+
+</details><hr />
+<h3 id="customer-8-tournament-of-numbers">
+  
+  
+    <a href="#customer-8-tournament-of-numbers" class="anchor-heading" aria-labelledby="customer-8-tournament-of-numbers"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Customer 8: Tournament of Numbers
+  
+  
+</h3>
+    
+
+<p>Link to <a href="https://puzzles.mit.edu/aquarium/2013/8.pdf">Customer 8</a></p><hr />
 <h3 id="meta">
   
   
