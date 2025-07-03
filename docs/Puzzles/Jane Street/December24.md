@@ -1,9 +1,12 @@
 ---
 layout: default
 parent: Jane Street Puzzles
-title: Decemember 2024.
+title: Decemember 2024
+nav_order: 1 
 ---
-# Puzzle Image
+# Puzzle!
+
+### Puzzle Link
 ![](/assets/images/JS_Images/Jane_Street_Dec_Image.jpg)
 Oh no! The elves in charge of board games only managed to complete a couple of sets before they were distracted by playtesting the toys. Ho-ho-ho-w infuriating! 
 
