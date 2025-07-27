@@ -14,9 +14,10 @@
   <style id="jtd-nav-activation">
   
 
+    .site-nav > ul.nav-list:first-child > li > a,
     
-    .site-nav > ul.nav-list:first-child > li:not(:nth-child(2)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(2)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -25,12 +26,14 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(2) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(2) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(2) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
       display: block;
     }
   </style>
@@ -50,20 +53,20 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Math | Jeremy’s Website</title>
+<title>Traceless | Jeremy’s Website</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Math" />
+<meta property="og:title" content="Traceless" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A website compiling some personal projects and some other things." />
 <meta property="og:description" content="A website compiling some personal projects and some other things." />
-<link rel="canonical" href="http://localhost:4000/docs/Math/" />
-<meta property="og:url" content="http://localhost:4000/docs/Math/" />
+<link rel="canonical" href="http://localhost:4000/docs/Projects/Traceless/" />
+<meta property="og:url" content="http://localhost:4000/docs/Projects/Traceless/" />
 <meta property="og:site_name" content="Jeremy’s Website" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Math" />
+<meta property="twitter:title" content="Traceless" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A website compiling some personal projects and some other things.","headline":"Math","url":"http://localhost:4000/docs/Math/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A website compiling some personal projects and some other things.","headline":"Traceless","url":"http://localhost:4000/docs/Projects/Traceless/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -261,25 +264,62 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
     <div class="main-content-wrap">
-      
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+    <li class="breadcrumb-nav-list-item"><a href="/docs/Projects/">Projects and Files</a></li>
+    <li class="breadcrumb-nav-list-item"><span>Traceless</span></li>
+  </ol>
+</nav>
+
+
       <div id="main-content" class="main-content">
         <main>
           
-            <p>This is going to be a compilation of all the cool math problems I’ve done, it’s going to be limited to algebra since inserting figures for geometry is quite tedious.</p>
+            <h1 id="traceless">
+  
+  
+    <a href="#traceless" class="anchor-heading" aria-labelledby="traceless"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Traceless
+  
+  
+</h1>
+    <hr />
+<h3 id="link-to-project-link">
+  
+  
+    <a href="#link-to-project-link" class="anchor-heading" aria-labelledby="link-to-project-link"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Link to project: <a href="https://github.com/antoniakwan/Traceless">Link</a>
+  
+  
+</h3>
+    <hr />
+<h3 id="quick-introduction">
+  
+  
+    <a href="#quick-introduction" class="anchor-heading" aria-labelledby="quick-introduction"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Quick Introduction
+  
+  
+</h3>
+    
+
+<p>This was a project developed by me and some friends at a local hackathon, the theme was “Privacy and Security” and we developed a platform that allowed users to change or delete media metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy.</p><hr />
+<h3 id="my-story">
+  
+  
+    <a href="#my-story" class="anchor-heading" aria-labelledby="my-story"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> My Story
+  
+  
+</h3>
+    
+<details>
+  <summary>Solution  </summary>
+  <p>The “Traceless” project,  showcases my capabilities in full-stack web engineering and AI integration. As a member of the team I conceived and built this platform to grant users greater control over their metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy.</p>
+
+  <p>My process involved leveraging Flask for the backend and React for a dynamic frontend, ensuring a cohesive and intuitive UX. A significant aspect of my work was the development and integration of a PyTorch-based AI model designed for image analysis, accurately identifying key visual features that could potentially give away important information (like license plates, street signs etc.). This model enhances user safety and privacy by allowing precise metadata control across diverse media types. The inclusion of “Traceless” in this portfolio demonstrates my strength in developing comprehensive, user-centric web applications from conception to implementation, effectively bridging the gap between sophisticated AI models and practical user functionalities. It highlights my proficiency in Python, Flask, React, TypeScript, PyTorch, Figma, CSS, and HTML.</p>
+</details>
 
           
 
           
-            <hr>
-<h2 class="text-delta">Table of contents</h2>
-
-<ul>
-  
-  <li>
-    <a href="/docs/Math/Problem1/">Feynman Technique</a>
-  </li>
-  
-</ul>
+            
           
         </main>
         
@@ -297,7 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         
           <p class="text-small text-grey-dk-000 mb-0">
-            <a href="https://github.com/Awayfaring/Awayfaring.github.io/tree/main/docs/Math/index.md" id="edit-this-page">Edit this page on GitHub</a>
+            <a href="https://github.com/Awayfaring/Awayfaring.github.io/tree/main/docs/Projects/Traceless.md" id="edit-this-page">Edit this page on GitHub</a>
           </p>
         
       </div>
