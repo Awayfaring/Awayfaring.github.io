@@ -9,7 +9,9 @@ nav_order: 1
 Important professional files.
 
 ---
-
 ### Resume: [Resume]
+### Professional Statement: [Statement]
+
 ---
 [Resume]: https://drive.google.com/file/d/1aRmlgI7epdarypSLLMkfwp9GPM37tLoK/view?usp=drive_link
+[Statement]: 
