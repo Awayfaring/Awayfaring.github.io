@@ -2,7 +2,7 @@
 layout: default
 parent: Puzzles
 title: HackTheNorth CTF
-nav_order: 3
+nav_order: 1
 ---
 # HackTheNorth CTF
 

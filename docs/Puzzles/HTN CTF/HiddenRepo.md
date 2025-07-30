@@ -94,7 +94,8 @@ Tossing this into a **base64** decoder we are greeted with the following message
     PROJECT_31892=f9e718de
 
 ---
-Going to the dropdown right next to *GooseHub* and entering `f9e718de` we are brought to a separate branch of the codebase
+Going to the dropdown right next to *GooseHub* and entering `f9e718de` we are brought to a separate branch of the codebase.
+
 We immediately see a red tag warning us to be careful and the file tree looks a bit different
 
 ```
