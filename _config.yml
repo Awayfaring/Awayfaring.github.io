@@ -15,6 +15,9 @@ aux_links:
 # Makes aux links open in a new tab
 aux_links_new_tab: false
 
+#
+color_scheme: dark
+
 # Plugins
 plugins:
   - jekyll-katex
@@ -137,4 +140,10 @@ callouts:
   important:
     title: Important
     color: green
-  
+
+# Observation
+callouts:
+  observation:
+    title: Observation
+    color: blue
+    opacity: 0.75

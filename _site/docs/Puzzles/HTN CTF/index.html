@@ -14,9 +14,10 @@
   <style id="jtd-nav-activation">
   
 
+    .site-nav > ul.nav-list:first-child > li > a,
     
-    .site-nav > ul.nav-list:first-child > li:not(:nth-child(1)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(2)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -25,12 +26,14 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(1) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(2) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(1) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(4) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(2) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(1) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
       display: block;
     }
   </style>
@@ -50,20 +53,20 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | Jeremy’s Website</title>
+<title>HackTheNorth CTF | Jeremy’s Website</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="HackTheNorth CTF" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A website compiling some personal projects and some other things." />
 <meta property="og:description" content="A website compiling some personal projects and some other things." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="http://localhost:4000/docs/Puzzles/HTN%20CTF/" />
+<meta property="og:url" content="http://localhost:4000/docs/Puzzles/HTN%20CTF/" />
 <meta property="og:site_name" content="Jeremy’s Website" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
+<meta property="twitter:title" content="HackTheNorth CTF" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A website compiling some personal projects and some other things.","headline":"Home","name":"Jeremy’s Website","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A website compiling some personal projects and some other things.","headline":"HackTheNorth CTF","url":"http://localhost:4000/docs/Puzzles/HTN%20CTF/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -263,36 +266,43 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
     <div class="main-content-wrap">
-      
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+    <li class="breadcrumb-nav-list-item"><a href="/docs/Puzzles/">Puzzles</a></li>
+    <li class="breadcrumb-nav-list-item"><span>HackTheNorth CTF</span></li>
+  </ol>
+</nav>
+
+
       <div id="main-content" class="main-content">
         <main>
           
-            <h1 id="welcome-to-my-website">
+            <h1 id="hackthenorth-ctf">
   
   
-    <a href="#welcome-to-my-website" class="anchor-heading" aria-labelledby="welcome-to-my-website"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Welcome to my website!.
+    <a href="#hackthenorth-ctf" class="anchor-heading" aria-labelledby="hackthenorth-ctf"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> HackTheNorth CTF
   
   
 </h1>
     
 
-<blockquote class="important">
-  <p>This website is currently <strong>WIP</strong> I will be adding alot more stuff in the coming weeks.</p>
-</blockquote><hr />
-<p>Hello! I’m Jeremy a Computer Science at <a href="https://en.wikipedia.org/wiki/University_of_Washington">University of Washington</a> student passionate about building software for personal entertainment and to solve real world problems.</p>
+<p>Page with (some of) the solutions for HackTheNorth’s 2025 CTF.</p>
 
-<p>In the past I was a Game Developer on Everlune, I led content updates for 3,000+ monthly players, gaining valuable experience in teamwork and user-focused design. These experiences reflect my drive to build smart, efficient systems that make an impact.</p>
-
-<p>At UW, I developed Python algorithms for neuron image analysis and noise reduction, improving data quality and processing efficiency. All with the goal of pushing research for CMT disease research</p>
-
-<p>My recent projects explore AI/ML, including a PyTorch image analysis model (Traceless), a GPT-2 model built from scratch, and a face morphing and data sync system (Looking Glass).</p>
-
-<p>I’m also currently exploring low level computer science through learning Rust and circuit design, I hope to use these skills to optimize my projects in the future.</p>
+<p>If you wish to try the CTF for yourself you should check out this <a href="https://www.youtube.com/shorts/QsUJGVL7szA">Video</a> to get started!</p><hr />
 
           
 
           
-            
+            <hr>
+<h2 class="text-delta">Table of contents</h2>
+
+<ul>
+  
+  <li>
+    <a href="/docs/Puzzles/HTN%20CTF/BrokenCalculator/">Broken Calculator (Puzzle 1)</a>
+  </li>
+  
+</ul>
           
         </main>
         
@@ -310,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         
           <p class="text-small text-grey-dk-000 mb-0">
-            <a href="https://github.com/Awayfaring/Awayfaring.github.io/tree/main/index.md" id="edit-this-page">Edit this page on GitHub</a>
+            <a href="https://github.com/Awayfaring/Awayfaring.github.io/tree/main/docs/Puzzles/HTN CTF/index.md" id="edit-this-page">Edit this page on GitHub</a>
           </p>
         
       </div>
