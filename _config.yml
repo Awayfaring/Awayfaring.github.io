@@ -140,10 +140,7 @@ callouts:
   important:
     title: Important
     color: green
-
-# Observation
-callouts:
-  observation:
+  obs:
     title: Observation
     color: blue
     opacity: 0.75

@@ -33,7 +33,7 @@ The first thing I did was to calculate the following
 
 From these calculations you can make 2 observations 
 
-{: .important }
+{: .obs }
 > Observation 1:
 >
 > It is likely that
@@ -44,7 +44,7 @@ From these calculations you can make 2 observations
 >
 > 8 maps to 10
 
-{: .important }
+{: .obs }
 > Observation 2:
 >
 > `+` performs the operation of `*`
