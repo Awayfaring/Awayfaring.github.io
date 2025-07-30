@@ -133,25 +133,25 @@ Like I kicked off the problem by calculating a few things
 This problem is more complicated than the last one, from these calculations I believe that 
 
 {: .important }
- Here's what I mean by **maps to**
-
- If `x` **maps to ** `y`, then in an equation replace every instance of `x` with `y`.
-
-{: .obs }
- Observation 1:
-
- It is likely that
-
- 2 maps to 5
-
- 4 maps to 2
-
- 3 maps to 3
+> Here's what I mean by **maps to**
+>
+> If `x` **maps to** `y`, then in an equation replace every instance of `x` with `y`.
 
 {: .obs }
- Observation 2:
+> Observation 1:
+>
+> It is likely that
+>
+> 2 maps to 5
+>
+> 4 maps to 2
+>
+> 3 maps to 3
 
- `+` maps to `^`
+{: .obs }
+> Observation 2:
+>
+> `+` maps to `^`
 
 Then I did a few more calculations targeted towards `÷`
 
@@ -167,11 +167,11 @@ Then I did a few more calculations targeted towards `÷`
 After these calculations I am fairly convinced that 
 
 {: .obs }
- Observation 3:
-
- `÷` maps to `-`
+> Observation 3:
+>
+> `÷` maps to `-`
 
 Since we can write `123` as `125 - 2` or `5 ^ 3 - 2`, reversing the mapping we defined above we can write that as `2 + 3 ÷ 4`
 
 Our final answer is **2 + 3 ÷ 4**
-</details
+</details>

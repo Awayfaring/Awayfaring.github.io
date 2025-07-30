@@ -138,11 +138,13 @@ compress_html:
 # Warning Box
 callouts_level: quiet # or loud
 callouts:
-  important:
-    title: Important
-    color: green
-  
   obs:
     title: Observation
     color: blue
-    opacity: 0.75
+    
+  important:
+    title: Important
+    color: green
+
+  
+
