@@ -352,6 +352,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   <p>From these calculations you can make 2 observations</p>
 
+  <blockquote class="important">
+    <p>Here’s what I mean by <strong>maps to</strong></p>
+
+    <p>If <code class="language-plaintext highlighter-rouge">x</code> **maps to ** <code class="language-plaintext highlighter-rouge">y</code>, then in an equation replace every instance of <code class="language-plaintext highlighter-rouge">x</code> with <code class="language-plaintext highlighter-rouge">y</code>.</p>
+  </blockquote>
+
   <blockquote class="obs">
     <p>Observation 1:</p>
 
@@ -367,9 +373,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <blockquote class="obs">
     <p>Observation 2:</p>
 
-    <p><code class="language-plaintext highlighter-rouge">+</code> performs the operation of <code class="language-plaintext highlighter-rouge">*</code></p>
+    <p><code class="language-plaintext highlighter-rouge">+</code> maps to <code class="language-plaintext highlighter-rouge">*</code></p>
 
-    <p><code class="language-plaintext highlighter-rouge">-</code> performs thr operation of <code class="language-plaintext highlighter-rouge">+</code></p>
+    <p><code class="language-plaintext highlighter-rouge">-</code> maps to <code class="language-plaintext highlighter-rouge">+</code></p>
   </blockquote>
 
   <p>From this we can conclude that <code class="language-plaintext highlighter-rouge">8 - 8</code> which is really <code class="language-plaintext highlighter-rouge">10 + 10</code> will give us our desired answer.</p>
@@ -382,9 +388,83 @@ document.addEventListener("DOMContentLoaded", function() {
   
 </h3>
     
-<summary>Solution for Part 1</summary>
+<details>
+  <summary>Solution for Part 2</summary>
+  <p>Now that we have solved part 1 the premise for parts 2 and 3 are likely the same.
+For part 2 the only difference we have is</p>
 
-<p>&lt;/details&gt;</p><hr />
+  <ul>
+    <li>We need to get <code class="language-plaintext highlighter-rouge">315</code></li>
+    <li>We’re allowed acces to: 2, 4, 6, *, +, =, C</li>
+  </ul>
+
+  <p>Like I kicked off the problem by calculating a few things</p>
+
+  <div class="table-wrapper"><table>
+    <thead>
+      <tr>
+        <th style="text-align: left">Calculation</th>
+        <th style="text-align: left">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">4 + 4 =</td>
+        <td style="text-align: left">49</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">2 + 2 =</td>
+        <td style="text-align: left">25</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">6 + 6 =</td>
+        <td style="text-align: left">81</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">4 * 4 =</td>
+        <td style="text-align: left">14</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">2 + 2 =</td>
+        <td style="text-align: left">10</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">6 + 6 =</td>
+        <td style="text-align: left">18</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <p>From these calculations you can make 2 observations</p>
+
+  <blockquote class="important">
+    <p>Here’s what I mean by <strong>maps to</strong></p>
+
+    <p>If <code class="language-plaintext highlighter-rouge">x</code> **maps to ** <code class="language-plaintext highlighter-rouge">y</code>, then in an equation replace every instance of <code class="language-plaintext highlighter-rouge">x</code> with <code class="language-plaintext highlighter-rouge">y</code>.</p>
+  </blockquote>
+
+  <blockquote class="obs">
+    <p>Observation 1:</p>
+
+    <p>It is likely that</p>
+
+    <p>2 maps to 5</p>
+
+    <p>4 maps to 7</p>
+
+    <p>6 maps to 9</p>
+  </blockquote>
+
+  <blockquote class="obs">
+    <p>Observation 2:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">+</code> maps to <code class="language-plaintext highlighter-rouge">*</code>, and vice versa</p>
+  </blockquote>
+
+  <p>Since the prime factorization of <code class="language-plaintext highlighter-rouge">315</code> is <code class="language-plaintext highlighter-rouge">5 * 7 * 9</code>, by reversing the mapping we defined above we know that for our calculator <code class="language-plaintext highlighter-rouge">315 = 2 + 4 + 6</code></p>
+
+  <p>Our final answer is <strong>2 + 4 + 6</strong></p>
+</details><hr />
 <h3 id="part-3">
   
   
@@ -393,9 +473,120 @@ document.addEventListener("DOMContentLoaded", function() {
   
 </h3>
     
-<summary>Solution for Part 1</summary>
+<details>
+  <summary>Solution for Part 3</summary>
+  <p>Now for the last part</p>
 
-<p>&lt;/details&gt;</p>
+  <ul>
+    <li>We need to get <code class="language-plaintext highlighter-rouge">123</code></li>
+    <li>We’re allowed acces to: 2, 3, 4, ÷, +, =, C</li>
+  </ul>
+
+  <p>Like I kicked off the problem by calculating a few things</p>
+
+  <div class="table-wrapper"><table>
+    <thead>
+      <tr>
+        <th style="text-align: left">Calculation</th>
+        <th style="text-align: left">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">2 + 2 =</td>
+        <td style="text-align: left">3125</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">3 + 3 =</td>
+        <td style="text-align: left">27</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">4 + 4 =</td>
+        <td style="text-align: left">4</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">4 + 2 =</td>
+        <td style="text-align: left">32</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">2 + 3 =</td>
+        <td style="text-align: left">125</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">3 + 2 =</td>
+        <td style="text-align: left">243</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <p>This problem is more complicated than the last one, from these calculations I believe that</p>
+
+  <p class="important">Here’s what I mean by <strong>maps to</strong></p>
+
+  <p>If <code class="language-plaintext highlighter-rouge">x</code> **maps to ** <code class="language-plaintext highlighter-rouge">y</code>, then in an equation replace every instance of <code class="language-plaintext highlighter-rouge">x</code> with <code class="language-plaintext highlighter-rouge">y</code>.</p>
+
+  <p class="obs">Observation 1:</p>
+
+  <p>It is likely that</p>
+
+  <p>2 maps to 5</p>
+
+  <p>4 maps to 2</p>
+
+  <p>3 maps to 3</p>
+
+  <p class="obs">Observation 2:</p>
+
+  <p><code class="language-plaintext highlighter-rouge">+</code> maps to <code class="language-plaintext highlighter-rouge">^</code></p>
+
+  <p>Then I did a few more calculations targeted towards <code class="language-plaintext highlighter-rouge">÷</code></p>
+
+  <div class="table-wrapper"><table>
+    <thead>
+      <tr>
+        <th style="text-align: left">Calculation</th>
+        <th style="text-align: left">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">2 ÷ 2 =</td>
+        <td style="text-align: left">0</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">3 ÷ 3 =</td>
+        <td style="text-align: left">0</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">4 ÷ 2 =</td>
+        <td style="text-align: left">-3</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">3 ÷ 2 =</td>
+        <td style="text-align: left">-2</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">2 ÷ 3 =</td>
+        <td style="text-align: left">2</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">2 ÷ 4 =</td>
+        <td style="text-align: left">3</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <p>After these calculations I am fairly convinced that</p>
+
+  <p class="obs">Observation 3:</p>
+
+  <p><code class="language-plaintext highlighter-rouge">÷</code> maps to <code class="language-plaintext highlighter-rouge">-</code></p>
+
+  <p>Since we can write <code class="language-plaintext highlighter-rouge">123</code> as <code class="language-plaintext highlighter-rouge">125 - 2</code> or <code class="language-plaintext highlighter-rouge">5 ^ 3 - 2</code>, reversing the mapping we defined above we can write that as <code class="language-plaintext highlighter-rouge">2 + 3 ÷ 4</code></p>
+
+  <p>Our final answer is <strong>2 + 3 ÷ 4</strong>
+&lt;/details</p>
+</details>
 
           
 
