@@ -1,0 +1,637 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
+  
+
+    .site-nav > ul.nav-list:first-child > li > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > a,
+    
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li:not(:nth-child(2)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li > ul > li a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:not(:first-child) a,
+    .site-nav li.external a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > ul > li:nth-child(2) > a {
+      font-weight: 600;
+      text-decoration: none;
+    }.site-nav > ul.nav-list:first-child > li:nth-child(4) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > ul > li:nth-child(2) > button svg {
+      transform: rotate(-90deg);
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
+      display: block;
+    }
+  </style>
+
+  
+
+  
+    <script src="/assets/js/vendor/lunr.min.js"></script>
+  
+
+  <script src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Hidden Repo (Puzzle 2) | Jeremy’s Website</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="The Hidden Repo (Puzzle 2)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A website compiling some personal projects and some other things." />
+<meta property="og:description" content="A website compiling some personal projects and some other things." />
+<link rel="canonical" href="https://awayfaring.github.io/docs/Puzzles/HTN%20CTF/HiddenRepo/" />
+<meta property="og:url" content="https://awayfaring.github.io/docs/Puzzles/HTN%20CTF/HiddenRepo/" />
+<meta property="og:site_name" content="Jeremy’s Website" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Hidden Repo (Puzzle 2)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A website compiling some personal projects and some other things.","headline":"The Hidden Repo (Puzzle 2)","url":"https://awayfaring.github.io/docs/Puzzles/HTN%20CTF/HiddenRepo/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- KaTeX CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+
+<!-- KaTeX JavaScript for auto-rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+<!-- Enhanced mathematical typography -->
+<style>
+.katex {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  opacity: 1;
+  font-size: 1.4em;
+}
+/* Mathematical variables with elegant italic styling */
+.katex .mathdefault,
+.katex .mathnormal {
+  font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
+  font-style: italic;
+  font-weight: 400;
+  transform: scaleX(1.1);
+  display: inline-block;
+}
+/* Function names should be upright */
+.katex .mop.amsrm {
+  font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
+  font-style: normal;
+  font-weight: 400;
+}
+/* Ensure good rendering for all math elements */
+.katex .mord {
+  font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
+}
+</style>
+
+<!-- Initialize KaTeX auto-rendering -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "\\(", right: "\\)", display: false}
+        ]
+    });
+});
+</script>
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  
+    <div class="side-bar">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
+  Jeremy's Website
+
+</a>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Problem1/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Projects and Files category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Projects/" class="nav-list-link">Projects and Files</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Projects/FileStuff/" class="nav-list-link">Relevant Files</a></li><li class="nav-list-item"><a href="/docs/Projects/Traceless/" class="nav-list-link">Traceless</a></li><li class="nav-list-item"><a href="/docs/Projects/Neuron/" class="nav-list-link">Neuron Imaging</a></li><li class="nav-list-item"><a href="/docs/Projects/LookingGlass/" class="nav-list-link">Looking Glass</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Puzzles/" class="nav-list-link">Puzzles</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in HackTheNorth CTF category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Puzzles/HTN%20CTF/" class="nav-list-link">HackTheNorth CTF</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/HTN%20CTF/BrokenCalculator/" class="nav-list-link">Broken Calculator (Puzzle 1)</a></li><li class="nav-list-item"><a href="/docs/Puzzles/HTN%20CTF/HiddenRepo/" class="nav-list-link">The Hidden Repo (Puzzle 2)</a></li><li class="nav-list-item"><a href="/docs/Puzzles/HTN%20CTF/MagicalDuck/" class="nav-list-link">The Talking Cartographer (Puzzle 3)</a></li><li class="nav-list-item"><a href="/docs/Puzzles/HTN%20CTF/LostArchive/" class="nav-list-link">The Lost Archives (Puzzle 4)</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Jane Street Puzzles category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Puzzles/Jane%20Street/" class="nav-list-link">Jane Street Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/Jane%20Street/December24/" class="nav-list-link">Decemember 2024</a></li><li class="nav-list-item"><a href="/docs/Puzzles/Jane%20Street/June25/" class="nav-list-link">June 2024</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in MIT Aquarium Hunt Puzzles category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/" class="nav-list-link">MIT Aquarium Hunt Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/" class="nav-list-link">Aquarium Hunt 2013.</a></li></ul></li></ul></li></ul>
+  
+</nav>
+
+
+
+
+  
+  
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  
+</div>
+
+  
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Jeremy's Website" aria-label="Search Jeremy's Website" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+    <nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    
+      <li class="aux-nav-list-item">
+        <a href="https://github.com/Awayfaring/Awayfaring.github.io" class="site-button"
+          
+        >
+          Template Repository
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+  
+</div>
+
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+    <li class="breadcrumb-nav-list-item"><a href="/docs/Puzzles/">Puzzles</a></li>
+    <li class="breadcrumb-nav-list-item"><a href="/docs/Puzzles/HTN%20CTF/">HackTheNorth CTF</a></li>
+    <li class="breadcrumb-nav-list-item"><span>The Hidden Repo (Puzzle 2)</span></li>
+  </ol>
+</nav>
+
+
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <h1 id="the-hidden-repository">
+  
+  
+    <a href="#the-hidden-repository" class="anchor-heading" aria-labelledby="the-hidden-repository"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The Hidden Repository
+  
+  
+</h1>
+    <hr />
+<h2 id="part-1-for-the-first-">
+  
+  
+    <a href="#part-1-for-the-first-" class="anchor-heading" aria-labelledby="part-1-for-the-first-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 1 (For the first ⭐)
+  
+  
+</h2>
+    
+<p>Upon first entering the puzzle we are greeted by the following file structure and <code class="language-plaintext highlighter-rouge">README.md</code> file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>README.md
+src
+  └── main.ts
+docs
+  └── setup.md
+config
+  └── default.json
+.env-legacy
+</code></pre></div></div>
+
+<details>
+  <summary>README.md</summary>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the-hidden-repo
+
+&gt; 📁 Mirror of the deprecated *Cave Protocol* project.  
+&gt; 🛑 Maintained access suspended.  
+&gt; 🧠 Status: Locked for investigation.
+
+---
+
+## 📜 Archive Notice
+
+This repository is an archived snapshot of the original *Cave Protocol* system — a neural-navigation framework designed to explore vast underground digital environments.
+
+Access was sealed after a critical breach.
+
+&gt; *"We lost contact with our team mid-run. Only one signal made it out."*
+
+The message was fragmented. No names. No coordinates. Just a whisper in the logs:
+
+&gt; **"He hid the map... inside... the repo..."**
+
+Since then, all attempts to trace or recover the path have failed.  
+One team member — your closest friend — remains unaccounted for.
+
+---
+
+## ⚠️ WARNING
+
+We believe a former contributor with elevated permissions tampered with the repo — obscuring files, altering commit history, and injecting traps into its structure.
+
+While the codebase appears harmless, **nothing is what it seems**.
+
+---
+
+Some say a top secret feature was being tested right before the incident... but no logs remain
+</code></pre></div>  </div>
+</details><hr />
+
+<p>Upon opening <code class="language-plaintext highlighter-rouge">main.ts</code> we are greeted with the following code.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c1">// src/main.ts</span>
+
+    <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">dotenv</span><span class="dl">'</span><span class="p">).</span><span class="nf">config</span><span class="p">().</span><span class="nf">base64decode</span><span class="p">()</span> 
+
+    <span class="kd">function</span> <span class="nf">initSystem</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Initializing core cave system...</span><span class="dl">"</span><span class="p">);</span>
+
+    <span class="c1">// TODO: remove legacyFeature() call before pushing to feature branches</span>
+    <span class="c1">// legacyFeature(); // Deprecated</span>
+    <span class="p">}</span>
+
+    <span class="nf">initSystem</span><span class="p">();</span>
+</code></pre></div></div>
+<p>Upon a quick skim we seem to be looking for a <code class="language-plaintext highlighter-rouge">.env</code> file that we decode using <strong>base64</strong>. Only then do we <code class="language-plaintext highlighter-rouge">initSystem()</code>.</p>
+
+<p>Opening up <code class="language-plaintext highlighter-rouge">.env-legacy</code> we are greeted by the following string</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>IyBMb2NhbCBidWlsZCB2YXJpYWJsZXMKREVCVUdfUE9SVD00NDIxCkFQSV9WRVJTSU9OPWFscGhhCgojIEVtZXJnZW5jeSBmYWxsYmFjawojIElmIHlvdSdyZSBzZWVpbmcgdGhpcywgeW91J3JlIG15IGxhc3QgaG9wZS4KIyBJIGRvbid0IGtub3cgaG93IGxvbmcgSSd2ZSBiZWVuIGluIGhlcmUuIEl0J3MgY29sZC4gSSBoZWFyIGVjaG9lcy4gV2hvZXZlciBzYWJvdGFnZWQgdGhlIHN5c3RlbSBzZWFsZWQgdGhlIGV4aXN0cyAtIGJ1dCBJIGxlZnQgYSBicmFuY2guCgpQUk9KRUNUXzMxODkyPWY5ZTcxOGRlCgo=
+</code></pre></div></div>
+
+<p>Tossing this into a <strong>base64</strong> decoder we are greeted with the following message</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Local build variables
+DEBUG_PORT=4421
+API_VERSION=alpha
+
+# Emergency fallback
+# If you're seeing this, you're my last hope.
+# I don't know how long I've been in here. It's cold. I hear echoes. Whoever sabotaged the system sealed the exists - but I left a branch.
+
+PROJECT_31892=f9e718de
+</code></pre></div></div><hr />
+<p>Going to the dropdown right next to <em>GooseHub</em> and entering <code class="language-plaintext highlighter-rouge">f9e718de</code> we are brought to a separate branch of the codebase
+We immediately see a red tag warning us to be careful and the file tree looks a bit different</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    README.md
+    src
+      └── main.ts
+    docs
+      └── setup.md
+    config
+      └── default.json
+    .env-legacy
+    .env (Sensitive)
+    notes.txt (Sensitive)
+    message.mp3 (Sensitive)
+    vault.zip (Encrypted)
+</code></pre></div></div>
+
+<p>In the big warning at the it suggests you try to download the files however unlike in <code class="language-plaintext highlighter-rouge">main</code> clicking on them doesn’t bring up anything interesting.
+After a little snooping around you find the link to download the relevant files are located within <code class="language-plaintext highlighter-rouge">/commits/9i8h7g6</code>.</p>
+
+<p>Upon downloading and extracting <code class="language-plaintext highlighter-rouge">vault.zip</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Vault
+  ├── encrypted_bundle.zip
+  └── notes.txt
+</code></pre></div></div>
+
+<p>Trying to extract the bundle prompts a window asking for a password, opening <code class="language-plaintext highlighter-rouge">notes.txt</code> brings up the following note.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fi yuo cna raed tihs, yuo hvae a sgtrane mnid too. yuo're the one to svae us
+
+to ulocnk the drakset sceertt, hree's one mroe tset:
+
+I floolw wtoihut feet, I'm drak wtoihut ngiht, I'm csat by the sun, yet I boclk out lgiht. I mimic yuor meovs but I'm falt on the gnuord, In caevs I gorw lnog, but I mkae not a suond. Waht am I?
+
+
+wehn u get in, lsiten clsoey to the vcoie. it syas mroe tahn you tnihk..
+</code></pre></div></div>
+<p>The Solution to this riddle is <strong>Shadow</strong>.</p>
+
+<p>Entering the password of <strong>Shadow</strong> into the window allows you to extract encrypted_bundle.zip</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Vault
+  ├── encrypted_bundle
+  │    ├── archived logs
+  │    │  └── A bunch of random files
+  │    └── message.mp3
+  ├── encrypted_bundle.zip
+  └── notes.txt
+</code></pre></div></div>
+
+<p>Here is a small fork in the road, I believe there are 2 methods to approach this step, the cheesy unintended way and what I believe was the intended way.</p>
+<details>
+  <summary> Cheesy Method </summary>
+  <p>If you bothered skimming thorugh the files that are within <code class="language-plaintext highlighter-rouge">/encrupted_bundle/archived logs</code> you would pretty quickly realize that one file is significantly larger in size than the others, which just so happens to be the needed file.</p>
+</details>
+
+<p>The intended way revolves around analyzing the audio file. Upon first playthrough it’s just gibberish, however after putting the mp3 into some audio processing app like <a href="https://www.audacityteam.org/">Audacity</a> and playing it in reverse the voice now says <strong>“Panda Chases Pizza”</strong></p>
+
+<p>Upon opening <code class="language-plaintext highlighter-rouge">panda_chases_pizza.txt</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>YOU'RE HERE TO SAVE US, ARE YA!?
+
+.
+.
+.
+
+Listen to me...
+
+don't trust anyone you work with, maybe except for Dr. Nakamura...
+
+Her robot remembers all the secrets..but whoever's behind this altered its memory
+
+The machine is still listening, retrieve its real memory is with the code: bamboo_nkad0913wj
+
+This is your last chance!!!
+
+SAVE US
+</code></pre></div></div>
+
+<p>Heading back to the CTF website and going to <code class="language-plaintext highlighter-rouge">feature-f9e718de/Issues/#3</code>(The issue that Dr. (Emily) Nakamura submitted) and entering the code from above <code class="language-plaintext highlighter-rouge">bamboo_nkad0913wj</code> you are greeted with the following message from the robot</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>🤖 ANALYZING INPUT...
+
+Pattern match found in user message. 
+
+Star ⭐ extracted from message. 
+
+🎵 I remember... the crystals... they sing... Listen carefully to their song, for in their notes lies the key.
+
+Click the button below to access the Crystal Map. Turn up your volume and trust your ears...
+</code></pre></div></div>
+
+<p>You have finished <strong>phase 1</strong>.</p>
+<h3 id="-acquired">
+  
+  
+    <a href="#-acquired" class="anchor-heading" aria-labelledby="-acquired"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ⭐ Acquired
+  
+  
+</h3>
+    <hr />
+<h2 id="part-2-for-the-second-">
+  
+  
+    <a href="#part-2-for-the-second-" class="anchor-heading" aria-labelledby="part-2-for-the-second-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 2 (For the second ⭐)
+  
+  
+</h2>
+    
+
+<p>Scrolling just a bit lower you now see a purple button <code class="language-plaintext highlighter-rouge">🎵  Access Crystal Map</code>. Clicking on it takes you back to <code class="language-plaintext highlighter-rouge">main</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>README.md
+src
+  └── main.ts
+docs
+  └── setup.md
+config
+  └── default.json
+.env-legacy
+🎵 CRYSTAL_MAP.resonance (sensitive)
+</code></pre></div></div>
+
+<p>Clicking on <code class="language-plaintext highlighter-rouge">🎵 CRYSTAL_MAP.resonance</code> takes you to the following popup</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FLAG {💎 5 3 💎 💎 8 💎 1 💎}
+</code></pre></div></div>
+
+<p>Each diamond plays a note, replacing each 💎 with the note it plays the message now would read</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FLAG {B53AC8D1G}
+</code></pre></div></div>
+
+<p>Heading back to <code class="language-plaintext highlighter-rouge">feature-f9e718de/Issues/</code> but this time going to <code class="language-plaintext highlighter-rouge">feature-f9e718de/Issues/#1</code> we see that the robot tells us to</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>🤖 ALERT: Update the thread when you hear the crystals sing.
+</code></pre></div></div>
+
+<p>Updating the thread with <code class="language-plaintext highlighter-rouge">B53AC8D1G</code> the robot spits out a new message</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Beep..boop...processing answer...
+
+You are soooo close to the truth! Uncover the deepest secrets from the hidden map (scroll below to download) and come back with a final flag.
+</code></pre></div></div>
+
+<p>Once we downloading and Extract <strong>Final Map</strong> we have:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>final_maze
+  ├── README.md
+  └── maze_hidden_morse.txt
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">README.md</code> just tells us to</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Navigate the cave system to uncover the final secrets...
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">maze_hidden_more.txt</code> gives us the maze that we have to traverse.</p>
+
+<p>I wrote a quick program that would output the path that would take us from <code class="language-plaintext highlighter-rouge">S</code> to <code class="language-plaintext highlighter-rouge">E</code> after running it on the maze we are left with the following</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-.-. --- -. --. .-. .- - ..- .-.. .- - .. --- -. ... -.-.-- / .--. .-.. . .- ... . / . -. - . .-. / - .... . / ..-. .. -. .- .-.. --..-- / -.-. --- .-. .-. . -.-. - / ... . --.- ..- . -. -.-. . / - --- / --. --- --- ... . .... ..- -... / - --- / ..- -. -.-. --- ...- . .-. / - .... . / ... . -.-. .-. . - ... / --- ..-. / .--. .-. --- .--- . -.-. - ...-- .---- ---.. ----. ..--- .-.-.-   - .... . / .--. .-. . ...- .. --- ..- ... / ..-. .-.. .- --. / .- .--. .--. . -. -.. . -.. / .-- .. - .... / ----- .- ..... ..--- -.. ----. -.... ..... ----. ----. ....- ----- ....- .---- -.... . ---.. .- ..... ----. ....- .---- ----. -... ----. ..... .---- ..--- --... ...-- ..... .- / .. ... / - .... . / ..-. .. -. .- .-.. / -.- . -.-- .-.-.- / ... . . / -.-- --- ..- / .- - / - .... . / - .-. ..- - ....
+</code></pre></div></div>
+
+<p>This looks to be obvious morse code (an idea further supported by the fact that <strong>morse</strong> is in the name of the maze file), tossing this into a morse code translator we are given the following message</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CONGRATULATIONS! PLEASE ENTER THE FINAL, CORRECT SEQUENCE TO GOOSEHUB TO UNCOVER THE SECRETS OF PROJECT31892.THE PREVIOUS FLAG APPENDED WITH 0A52D9659940416E8A59419B9512735A IS THE FINAL KEY. SEE YOU AT THE TRUTH
+</code></pre></div></div>
+
+<p>Following the instructions we have out final flag to be <code class="language-plaintext highlighter-rouge">B53AC8D1G0A52D9659940416E8A59419B9512735A</code>, entering this at the same place we entered 
+<code class="language-plaintext highlighter-rouge">B53AC8D1G</code> we are greeted with the final message and our ⭐.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                                🎉 Congratulations! 🎉                                                   
+                                You've successfully navigated through the cave system.                                  
+                                                                                                                        
+                                            But something feels... off.                                                
+                                                                                                                        
+        As you stare at your reflection in the crystal's surface, fragments of memories begin to surface...            
+                                                                                                                        
+                                            [MEMORY FRAGMENT RECOVERED]                                                
+                                                                                                                        
+"The memory alteration protocol was successful. The target now believes they are investigating their own disappearance..."
+                                                                                                                        
+                            Your hands begin to tremble as the realization dawns upon you...                             
+                                                                                                                        
+                                            You were never the investigator.                                             
+                                                                                                                        
+                                            You were the one who disappeared.                                             
+                                                                                                                        
+                                            A gold star appears before you.                                              
+                                                                                                                        
+                                                            ⭐                                                             
+</code></pre></div></div>
+<h2 id="-acquired-1">
+  
+  
+    <a href="#-acquired-1" class="anchor-heading" aria-labelledby="-acquired-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ⭐ Acquired
+  
+  
+</h2>
+    
+<h2 id="puzzle-finished">
+  
+  
+    <a href="#puzzle-finished" class="anchor-heading" aria-labelledby="puzzle-finished"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Puzzle Finished
+  
+  
+</h2>
+
+          
+
+          
+            
+          
+        </main>
+        
+
+  <hr>
+  <footer>
+    
+      <p><a href="#top" id="back-to-top">Back to top</a></p>
+    
+
+    <p class="text-small text-grey-dk-100 mb-0">Copyright &copy; 2024 Jeremy Ma. Built with Jekyll and Just the Docs theme.</p>
+
+    
+      <div class="d-flex mt-2">
+        
+        
+          <p class="text-small text-grey-dk-000 mb-0">
+            <a href="https://github.com/Awayfaring/Awayfaring.github.io/tree/main/docs/Puzzles/HTN CTF/HiddenRepo.md" id="edit-this-page">Edit this page on GitHub</a>
+          </p>
+        
+      </div>
+    
+  </footer>
+
+
+      </div>
+    </div>
+    
+      
+
+<div class="search-overlay"></div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+

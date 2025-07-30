@@ -1,163 +1,240 @@
 {"0": {
     "doc": "Broken Calculator (Puzzle 1)",
     "title": "Broken Calculator",
-    "content": "This puzzle is split into 3 different parts. Part 1 . Solution for Part 1 Immediately we are presented with a few pieces of information. | We know the calculator is broken so we shouldn’t expect anything to work right. | We are restricted to using the following keys: 8, 5, 3, +, - , =, C | We need to somehow use the numbers to calculate 20. | . The first thing I did was to calculate the following . | Calculation | Result | . | 3 + 3 = | 4 | . | 3 - 3 = | 4 | . | 5 + 5 = | 49 | . | 5 - 5 = | 14 | . | 8 + 8 = | 100 | . | 3 + 5 = | 14 | . | 5 + 8 = | 70 | . From these calculations you can make 2 observations . Here’s what I mean by maps to . If x **maps to ** y, then in an equation replace every instance of x with y. Observation 1: . It is likely that . 3 maps to 2 . 5 maps to 7 . 8 maps to 10 . Observation 2: . + maps to * . - maps to + . From this we can conclude that 8 - 8 which is really 10 + 10 will give us our desired answer. Part 2 . Solution for Part 2 Now that we have solved part 1 the premise for parts 2 and 3 are likely the same. For part 2 the only difference we have is . | We need to get 315 | We’re allowed acces to: 2, 4, 6, *, +, =, C | . Like I kicked off the problem by calculating a few things . | Calculation | Result | . | 4 + 4 = | 49 | . | 2 + 2 = | 25 | . | 6 + 6 = | 81 | . | 4 * 4 = | 14 | . | 2 + 2 = | 10 | . | 6 + 6 = | 18 | . From these calculations you can make 2 observations . Here’s what I mean by maps to . If x **maps to ** y, then in an equation replace every instance of x with y. Observation 1: . It is likely that . 2 maps to 5 . 4 maps to 7 . 6 maps to 9 . Observation 2: . + maps to *, and vice versa . Since the prime factorization of 315 is 5 * 7 * 9, by reversing the mapping we defined above we know that for our calculator 315 = 2 + 4 + 6 . Our final answer is 2 + 4 + 6 . Part 3 . Solution for Part 3 Now for the last part . | We need to get 123 | We’re allowed acces to: 2, 3, 4, ÷, +, =, C | . Like I kicked off the problem by calculating a few things . | Calculation | Result | . | 2 + 2 = | 3125 | . | 3 + 3 = | 27 | . | 4 + 4 = | 4 | . | 4 + 2 = | 32 | . | 2 + 3 = | 125 | . | 3 + 2 = | 243 | . This problem is more complicated than the last one, from these calculations I believe that . Here’s what I mean by maps to . If x maps to y, then in an equation replace every instance of x with y. Observation 1: . It is likely that . 2 maps to 5 . 4 maps to 2 . 3 maps to 3 . Observation 2: . + maps to ^ . Then I did a few more calculations targeted towards ÷ . | Calculation | Result | . | 2 ÷ 2 = | 0 | . | 3 ÷ 3 = | 0 | . | 4 ÷ 2 = | -3 | . | 3 ÷ 2 = | -2 | . | 2 ÷ 3 = | 2 | . | 2 ÷ 4 = | 3 | . After these calculations I am fairly convinced that . Observation 3: . ÷ maps to - . Since we can write 123 as 125 - 2 or 5 ^ 3 - 2, reversing the mapping we defined above we can write that as 2 + 3 ÷ 4 . Our final answer is 2 + 3 ÷ 4 . ",
+    "content": "This puzzle is split into 3 different parts. Part 1 . Solution for Part 1 Immediately we are presented with a few pieces of information. | We know the calculator is broken so we shouldn’t expect anything to work right. | We are restricted to using the following keys: 8, 5, 3, +, - , =, C | We need to somehow use the numbers to calculate 20. | . The first thing I did was to calculate the following . | Calculation | Result | . | 3 + 3 = | 4 | . | 3 - 3 = | 4 | . | 5 + 5 = | 49 | . | 5 - 5 = | 14 | . | 8 + 8 = | 100 | . | 3 + 5 = | 14 | . | 5 + 8 = | 70 | . From these calculations you can make 2 observations . Here’s what I mean by maps to . If x **maps to ** y, then in an equation replace every instance of x with y. It is likely that . 3 maps to 2 . 5 maps to 7 . 8 maps to 10 . + maps to * . - maps to + . From this we can conclude that 8 - 8 which is really 10 + 10 will give us our desired answer. Part 2 . Solution for Part 2 Now that we have solved part 1 the premise for parts 2 and 3 are likely the same. For part 2 the only difference we have is . | We need to get 315 | We’re allowed acces to: 2, 4, 6, *, +, =, C | . Like I kicked off the problem by calculating a few things . | Calculation | Result | . | 4 + 4 = | 49 | . | 2 + 2 = | 25 | . | 6 + 6 = | 81 | . | 4 * 4 = | 14 | . | 2 + 2 = | 10 | . | 6 + 6 = | 18 | . From these calculations you can make 2 observations . Here’s what I mean by maps to . If x **maps to ** y, then in an equation replace every instance of x with y. It is likely that . 2 maps to 5 . 4 maps to 7 . 6 maps to 9 . + maps to *, and vice versa . Since the prime factorization of 315 is 5 * 7 * 9, by reversing the mapping we defined above we know that for our calculator 315 = 2 + 4 + 6 . Our final answer is 2 + 4 + 6 . Part 3 . Solution for Part 3 Now for the last part . | We need to get 123 | We’re allowed acces to: 2, 3, 4, ÷, +, =, C | . Like I kicked off the problem by calculating a few things . | Calculation | Result | . | 2 + 2 = | 3125 | . | 3 + 3 = | 27 | . | 4 + 4 = | 4 | . | 4 + 2 = | 32 | . | 2 + 3 = | 125 | . | 3 + 2 = | 243 | . This problem is more complicated than the last one, from these calculations I believe that . Here’s what I mean by maps to . If x **maps to ** y, then in an equation replace every instance of x with y. It is likely that . 2 maps to 5 . 4 maps to 2 . 3 maps to 3 . + maps to ^ . Then I did a few more calculations targeted towards ÷ . | Calculation | Result | . | 2 ÷ 2 = | 0 | . | 3 ÷ 3 = | 0 | . | 4 ÷ 2 = | -3 | . | 3 ÷ 2 = | -2 | . | 2 ÷ 3 = | 2 | . | 2 ÷ 4 = | 3 | . After these calculations I am fairly convinced that . ÷ maps to - . Since we can write 123 as 125 - 2 or 5 ^ 3 - 2, reversing the mapping we defined above we can write that as 2 + 3 ÷ 4 . Our final answer is 2 + 3 ÷ 4 . Congrats you got a . ",
     "url": "/docs/Puzzles/HTN%20CTF/BrokenCalculator/#broken-calculator",
     
     "relUrl": "/docs/Puzzles/HTN%20CTF/BrokenCalculator/#broken-calculator"
   },"1": {
+    "doc": "Broken Calculator (Puzzle 1)",
+    "title": "⭐",
+    "content": " ",
+    "url": "/docs/Puzzles/HTN%20CTF/BrokenCalculator/#section",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/BrokenCalculator/#section"
+  },"2": {
     "doc": "Broken Calculator (Puzzle 1)",
     "title": "Broken Calculator (Puzzle 1)",
     "content": " ",
     "url": "/docs/Puzzles/HTN%20CTF/BrokenCalculator/",
     
     "relUrl": "/docs/Puzzles/HTN%20CTF/BrokenCalculator/"
-  },"2": {
+  },"3": {
     "doc": "Decemember 2024",
     "title": "Puzzle!",
     "content": "Puzzle Link . Oh no! The elves in charge of board games only managed to complete a couple of sets before they were distracted by playtesting the toys. Ho-ho-ho-w infuriating! . [The answer to this puzzle is a single word.] . Original Puzzle Link . Here I will have the steps in which I do the puzzle, I will have drop downs including each of the steps, and the results. Solution First and foremost we see that the game pieces form letters. Using the game boxes/instructions in the back, we order the letter the game pieces form. | UNO: M | Catan: I | Risk: S | Monopoly: S | Dominion: I | Scrabble: N | Sushi Go: G | Chess: O | Clue: N | Stratego: E | Bananagrams: S | . We can see that the letters form the word “MISSINGONES”, and upon caferul observation you can realize that each of displayed pieces, have one “object” missing. Take UNO, UNO has 4 “categories” of cards, . | Red | Yellow | Green | Blue | . With a quick observation we can see that no Yellow cards were used in the construction of the “M”. We take that principle and apply it to the other games categories. | UNO: Green, Blue, Red, Yellow | Catan: Has 5 resource cards, of which Ore is missing. | Risk: All the teal colored are Asian countries/regions, of which Ural is missing | Monopoly: _____ | Dominion: Of the 7 Base resouce cards Silver is missing. | Scrabble: Of the 26 letters, U is Missing | Sushi Go: Of the base set cards the Nigiri card is missing. | Chess: The Kings for both black and white are missing. | Clue: _____ | Stratego: They have an older version of Stratego of which 8 -&gt; Miner is missing. | Bananagrams: Is Missing the letter Y. | . After a bit of looking you will realize that Monopoly and clue have no missing pieces and that would be correct. Inside our final answer we will treat those 2 as “Spaces”. In the order I presented (which was the same order in which we derived “MISSING ONES”), reading the first letter of every missing “one” would give us the phrase . “YOU SUNK MY _“ . Upon a quick search we find that “Battleship” is the missing word, and also our final answer. ",
     "url": "/docs/Puzzles/Jane%20Street/December24/#puzzle",
     
     "relUrl": "/docs/Puzzles/Jane%20Street/December24/#puzzle"
-  },"3": {
+  },"4": {
     "doc": "Decemember 2024",
     "title": "Decemember 2024",
     "content": " ",
     "url": "/docs/Puzzles/Jane%20Street/December24/",
     
     "relUrl": "/docs/Puzzles/Jane%20Street/December24/"
-  },"4": {
+  },"5": {
     "doc": "Relevant Files",
     "title": "Relevant Files",
     "content": "Important professional files. Resume: Resume . Professional Statement: [Statement] . [Statement]: . ",
     "url": "/docs/Projects/FileStuff/",
     
     "relUrl": "/docs/Projects/FileStuff/"
-  },"5": {
+  },"6": {
+    "doc": "The Hidden Repo (Puzzle 2)",
+    "title": "The Hidden Repository",
+    "content": ". ",
+    "url": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#the-hidden-repository",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#the-hidden-repository"
+  },"7": {
+    "doc": "The Hidden Repo (Puzzle 2)",
+    "title": "Part 1 (For the first ⭐)",
+    "content": "Upon first entering the puzzle we are greeted by the following file structure and README.md file. README.md src └── main.ts docs └── setup.md config └── default.json .env-legacy . README.md # the-hidden-repo &gt; 📁 Mirror of the deprecated *Cave Protocol* project. &gt; 🛑 Maintained access suspended. &gt; 🧠 Status: Locked for investigation. --- ## 📜 Archive Notice This repository is an archived snapshot of the original *Cave Protocol* system — a neural-navigation framework designed to explore vast underground digital environments. Access was sealed after a critical breach. &gt; *\"We lost contact with our team mid-run. Only one signal made it out.\"* The message was fragmented. No names. No coordinates. Just a whisper in the logs: &gt; **\"He hid the map... inside... the repo...\"** Since then, all attempts to trace or recover the path have failed. One team member — your closest friend — remains unaccounted for. --- ## ⚠️ WARNING We believe a former contributor with elevated permissions tampered with the repo — obscuring files, altering commit history, and injecting traps into its structure. While the codebase appears harmless, **nothing is what it seems**. --- Some say a top secret feature was being tested right before the incident... but no logs remain . Upon opening main.ts we are greeted with the following code. // src/main.ts require('dotenv').config().base64decode() function initSystem() { console.log(\"Initializing core cave system...\"); // TODO: remove legacyFeature() call before pushing to feature branches // legacyFeature(); // Deprecated } initSystem(); . Upon a quick skim we seem to be looking for a .env file that we decode using base64. Only then do we initSystem(). Opening up .env-legacy we are greeted by the following string . IyBMb2NhbCBidWlsZCB2YXJpYWJsZXMKREVCVUdfUE9SVD00NDIxCkFQSV9WRVJTSU9OPWFscGhhCgojIEVtZXJnZW5jeSBmYWxsYmFjawojIElmIHlvdSdyZSBzZWVpbmcgdGhpcywgeW91J3JlIG15IGxhc3QgaG9wZS4KIyBJIGRvbid0IGtub3cgaG93IGxvbmcgSSd2ZSBiZWVuIGluIGhlcmUuIEl0J3MgY29sZC4gSSBoZWFyIGVjaG9lcy4gV2hvZXZlciBzYWJvdGFnZWQgdGhlIHN5c3RlbSBzZWFsZWQgdGhlIGV4aXN0cyAtIGJ1dCBJIGxlZnQgYSBicmFuY2guCgpQUk9KRUNUXzMxODkyPWY5ZTcxOGRlCgo= . Tossing this into a base64 decoder we are greeted with the following message . # Local build variables DEBUG_PORT=4421 API_VERSION=alpha # Emergency fallback # If you're seeing this, you're my last hope. # I don't know how long I've been in here. It's cold. I hear echoes. Whoever sabotaged the system sealed the exists - but I left a branch. PROJECT_31892=f9e718de . Going to the dropdown right next to GooseHub and entering f9e718de we are brought to a separate branch of the codebase We immediately see a red tag warning us to be careful and the file tree looks a bit different . README.md src └── main.ts docs └── setup.md config └── default.json .env-legacy .env (Sensitive) notes.txt (Sensitive) message.mp3 (Sensitive) vault.zip (Encrypted) . In the big warning at the it suggests you try to download the files however unlike in main clicking on them doesn’t bring up anything interesting. After a little snooping around you find the link to download the relevant files are located within /commits/9i8h7g6. Upon downloading and extracting vault.zip . Vault ├── encrypted_bundle.zip └── notes.txt . Trying to extract the bundle prompts a window asking for a password, opening notes.txt brings up the following note. fi yuo cna raed tihs, yuo hvae a sgtrane mnid too. yuo're the one to svae us to ulocnk the drakset sceertt, hree's one mroe tset: I floolw wtoihut feet, I'm drak wtoihut ngiht, I'm csat by the sun, yet I boclk out lgiht. I mimic yuor meovs but I'm falt on the gnuord, In caevs I gorw lnog, but I mkae not a suond. Waht am I? wehn u get in, lsiten clsoey to the vcoie. it syas mroe tahn you tnihk.. The Solution to this riddle is Shadow. Entering the password of Shadow into the window allows you to extract encrypted_bundle.zip . Vault ├── encrypted_bundle │ ├── archived logs │ │ └── A bunch of random files │ └── message.mp3 ├── encrypted_bundle.zip └── notes.txt . Here is a small fork in the road, I believe there are 2 methods to approach this step, the cheesy unintended way and what I believe was the intended way. Cheesy Method If you bothered skimming thorugh the files that are within /encrupted_bundle/archived logs you would pretty quickly realize that one file is significantly larger in size than the others, which just so happens to be the needed file. The intended way revolves around analyzing the audio file. Upon first playthrough it’s just gibberish, however after putting the mp3 into some audio processing app like Audacity and playing it in reverse the voice now says “Panda Chases Pizza” . Upon opening panda_chases_pizza.txt . YOU'RE HERE TO SAVE US, ARE YA!? . Listen to me... don't trust anyone you work with, maybe except for Dr. Nakamura... Her robot remembers all the secrets..but whoever's behind this altered its memory The machine is still listening, retrieve its real memory is with the code: bamboo_nkad0913wj This is your last chance!!! SAVE US . Heading back to the CTF website and going to feature-f9e718de/Issues/#3(The issue that Dr. (Emily) Nakamura submitted) and entering the code from above bamboo_nkad0913wj you are greeted with the following message from the robot . 🤖 ANALYZING INPUT... Pattern match found in user message. Star ⭐ extracted from message. 🎵 I remember... the crystals... they sing... Listen carefully to their song, for in their notes lies the key. Click the button below to access the Crystal Map. Turn up your volume and trust your ears... You have finished phase 1. ⭐ Acquired . ",
+    "url": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#part-1-for-the-first-",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#part-1-for-the-first-"
+  },"8": {
+    "doc": "The Hidden Repo (Puzzle 2)",
+    "title": "Part 2 (For the second ⭐)",
+    "content": "Scrolling just a bit lower you now see a purple button 🎵 Access Crystal Map. Clicking on it takes you back to main. README.md src └── main.ts docs └── setup.md config └── default.json .env-legacy 🎵 CRYSTAL_MAP.resonance (sensitive) . Clicking on 🎵 CRYSTAL_MAP.resonance takes you to the following popup . FLAG {💎 5 3 💎 💎 8 💎 1 💎} . Each diamond plays a note, replacing each 💎 with the note it plays the message now would read . FLAG {B53AC8D1G} . Heading back to feature-f9e718de/Issues/ but this time going to feature-f9e718de/Issues/#1 we see that the robot tells us to . 🤖 ALERT: Update the thread when you hear the crystals sing. Updating the thread with B53AC8D1G the robot spits out a new message . Beep..boop...processing answer... You are soooo close to the truth! Uncover the deepest secrets from the hidden map (scroll below to download) and come back with a final flag. Once we downloading and Extract Final Map we have: . final_maze ├── README.md └── maze_hidden_morse.txt . README.md just tells us to . Navigate the cave system to uncover the final secrets... maze_hidden_more.txt gives us the maze that we have to traverse. I wrote a quick program that would output the path that would take us from S to E after running it on the maze we are left with the following . -.-. --- -. --.-.- - ..- .-..- - .. --- -... -.-.-- / .--.-..- ... / . -. - .-. / - .... / ..-.. -.- .-.. --..-- / -.-. --- .-.-. -.-. - / ... --.- ..- . -. -.-. / - --- / --. --- --- .......- -... / - --- / ..- -. -.-. --- ...- .-. / - .... / ... -.-.-. - ... / --- ..-. / .--.-. --- .--- . -.-. - ...-- .---- ---.. ----..--- .-.-.- - .... / .--.-...- .. --- ..- ... / ..-.-..- --. / .- .--.--. -. -.. -.. / .-- .. - .... / ----- .- ......--- -.. ----. -........ ----. ----....- ----- ....- .---- -.... ---..- ..... ----....- .---- ----. -... ----.....---- ..--- --.....-- .....- / .... / - .... / ..-.. -.- .-.. / -.- . -.-- .-.-.- / ... / -.-- --- ..- / .- - / - .... / - .-..- - .... This looks to be obvious morse code (an idea further supported by the fact that morse is in the name of the maze file), tossing this into a morse code translator we are given the following message . CONGRATULATIONS! PLEASE ENTER THE FINAL, CORRECT SEQUENCE TO GOOSEHUB TO UNCOVER THE SECRETS OF PROJECT31892.THE PREVIOUS FLAG APPENDED WITH 0A52D9659940416E8A59419B9512735A IS THE FINAL KEY. SEE YOU AT THE TRUTH . Following the instructions we have out final flag to be B53AC8D1G0A52D9659940416E8A59419B9512735A, entering this at the same place we entered B53AC8D1G we are greeted with the final message and our ⭐. 🎉 Congratulations! 🎉 You've successfully navigated through the cave system. But something feels... off. As you stare at your reflection in the crystal's surface, fragments of memories begin to surface... [MEMORY FRAGMENT RECOVERED] \"The memory alteration protocol was successful. The target now believes they are investigating their own disappearance...\" Your hands begin to tremble as the realization dawns upon you... You were never the investigator. You were the one who disappeared. A gold star appears before you. ⭐ . ",
+    "url": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#part-2-for-the-second-",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#part-2-for-the-second-"
+  },"9": {
+    "doc": "The Hidden Repo (Puzzle 2)",
+    "title": "⭐ Acquired",
+    "content": " ",
+    "url": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#-acquired-1",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#-acquired-1"
+  },"10": {
+    "doc": "The Hidden Repo (Puzzle 2)",
+    "title": "Puzzle Finished",
+    "content": " ",
+    "url": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#puzzle-finished",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/HiddenRepo/#puzzle-finished"
+  },"11": {
+    "doc": "The Hidden Repo (Puzzle 2)",
+    "title": "The Hidden Repo (Puzzle 2)",
+    "content": " ",
+    "url": "/docs/Puzzles/HTN%20CTF/HiddenRepo/",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/HiddenRepo/"
+  },"12": {
     "doc": "June 2024",
     "title": "Puzzle!",
     "content": "Puzzle Link . Here! The puzzle solutiuon that is presented by JS is a good quick read if you only want an overall summary. Here I will provide a step by step approach (essentially how I approached and solved this puzzle). Solution . ",
     "url": "/docs/Puzzles/Jane%20Street/June25/#puzzle",
     
     "relUrl": "/docs/Puzzles/Jane%20Street/June25/#puzzle"
-  },"6": {
+  },"13": {
     "doc": "June 2024",
     "title": "June 2024",
     "content": " ",
     "url": "/docs/Puzzles/Jane%20Street/June25/",
     
     "relUrl": "/docs/Puzzles/Jane%20Street/June25/"
-  },"7": {
+  },"14": {
     "doc": "Looking Glass",
     "title": "Looking Glass",
     "content": ". Link to project website: Link . Quick Introduction . This was a project developed by me and 3 other people for a club at school. We sought to answer the question “How do people process images of strangers vs familiar people differently?”. Over the course of a year we created the entire project, ran tests and gathered data, and presented our data at a research presentation at UW. My Story . Solution Looking Glass,” a project I’ve been part of since September 2024, exemplifies my ability to design and implement complex experiments, particularly in neuroscience. My primary role involved creating the experiment’s core: investigating how neural activity changes when subjects view familiar or unfamiliar faces. This included developing a sophisticated Python algorithm capable of realistically morphing two faces. I, along with a fellow team member, developed a robust pipeline for recording and synchronizing EEG and eye tracker data from users, ensuring precise data collection. Furthermore, I used JavaScript to implement an engaging user interface that displays a random selection of familiar, stranger, and morphed faces to participants. The project culminated in the creation and presentation of a poster detailing our findings at a research symposium. This artifact underscores my skills in Python and JavaScript, data acquisition, algorithmic development for scientific applications, and effectively communicating research outcomes. ",
     "url": "/docs/Projects/LookingGlass/",
     
     "relUrl": "/docs/Projects/LookingGlass/"
-  },"8": {
+  },"15": {
+    "doc": "The Lost Archives (Puzzle 4)",
+    "title": "The Lost Archives",
+    "content": "This puzzle revolves around interacting with a terminal . ",
+    "url": "/docs/Puzzles/HTN%20CTF/LostArchive/#the-lost-archives",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/LostArchive/#the-lost-archives"
+  },"16": {
+    "doc": "The Lost Archives (Puzzle 4)",
+    "title": "The Lost Archives (Puzzle 4)",
+    "content": " ",
+    "url": "/docs/Puzzles/HTN%20CTF/LostArchive/",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/LostArchive/"
+  },"17": {
     "doc": "Aquarium Hunt 2013.",
     "title": "Aquarium Hunt 2013",
     "content": " ",
     "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#aquarium-hunt-2013",
     
     "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#aquarium-hunt-2013"
-  },"9": {
+  },"18": {
     "doc": "Aquarium Hunt 2013.",
     "title": "Link to the Hunt, includes checker",
     "content": "This puzzle hunt has 9 parts, 8 feeder parts and 1 META. Below I will have my approach along with the solution for each of the puzzles. 1. Alter Rivals . Link to Customer 1 . Approach and Solution Looking past the converstion between the “Customer” and “You”. We are greeted by the main body of the puzzle, which in this case happens to be a block of text. Skimming thorugh the text 2 things immediately stand out . | Almost nothing is capitalized, The first word of every sentence is lowercase, the pronoun “I” which is always uppercase is never capitalized in this block of text. | Since a majority of the text is lowercase the words that are capitalized stand out greatly. | . As such I decided to focus on these select words/letters. They are the following: . | Visa | Boeing | Omega | AT&amp;T | Duracell | MegaBloks | . My first instinct was to take the letters that were capitalized (i.e V from Visa) and see if they form anything meaningful. Unfortunatley the letters “VBOATTDM”, or “VBOADM”/”VBOTDM” (Using only the A or T from AT&amp;T) didn’t anagram or decipher into any meaningful words. After a period of thinking I noticed a detail I glossed over earlier. All of the aforementioned words were large brands/companies, using the hint provided by the title of the puzzle I decided to look into the “rivals” of these companies. Here I compiled a list. | Visa: American Express, MasterCard, Discover | Boeing: Airbus | Omega: Rolex, Patek, Breitling | AT&amp;T: T-Mobile, Version | Duracell: Energizer, Panasonic | MegaBloks: Lego | . Taking the first letter of the categories I’m fairly certain in we have: . _ A _ _ _ L . After some guess and check, the only word I got that made any sense was . MARVEL . In which you select, MasterCard, Airbus, Rolex, Verison, Energizer, Lego. Marvel however is not yet the answer. Using the “Alter Rivals” theme provided by the title we find the “rival” for Marvel which is DC also known as DC Comics . 2. Parallel Enclousures . Link to Customer 2 . 3. Company Timpani . Link to Customer 3 . Approach and Solution This part was easy, just some wordplay . | Reimburse (Pay) &amp; Friend (Pal) -&gt; PayPal | Slime (Goo) &amp; Seabird (Gull) -&gt; Google | First name of Hermione (Emma) &amp; Boy child of Father (Son) -&gt; Amazon | Phone Downloadable (App) &amp; Boat Shell (Hull) -&gt; Apple | Really Tiny (Micro) &amp; Fluffy (Soft) -&gt; Microsoft | British Fool (Twit) &amp; Sound of Hesitation (Uhh) -&gt; Twitter | Chains are like this (Linked) &amp; Not out (in) -&gt; LinkedIn | Not me (You) &amp; Cylinder (Tube) -&gt; Youtube | . The numbers on the right side I assumed represented the letter we took in the word. \\ . | PayPal(1) -&gt; P | Google(3) -&gt; O | Amazon(2) -&gt; M | Apple(1) -&gt; A | Microsoft(2) -&gt; I | Twitter(2) -&gt; W | Linkedin(2) -&gt; I | Youtube(5) -&gt; U | . However this doesnt make any sense, so back to the drawing board. This time around I pay more attention to the provided flavor text. In the conversation it seems that the individual we are trying to help is in some convention with many CEO’s that “don’t even seem to know the names of their companies”. This makes me believe that rather the number is referring to a letter within the name of the CEO rather than the company. Doing a little research (remember the year that this was made is 2013), here are the CEOs for the companies above . | PayPal -&gt; Peter Thiel(1) -&gt; P | Google -&gt; Larry Page(3) -&gt; R | Amazon -&gt; Jeff Bezos(2) -&gt; E | Apple -&gt; Tim Cook(1) -&gt; T | Microsoft(2) -&gt; Steve Ballmer -&gt; T | Twitter(2) -&gt; Dick Costolo -&gt; I | Linkedin(2) -&gt; Jeff Weiner -&gt; E | Youtube(5) -&gt; Salar Kamangar -&gt; R | . The letters we extracted spells PRETTIER which is the answer for this part. Customer 4: Consolidations . Link to Customer 4 . Approach and Solution Reading the flavor text for this puzzle is vital, the character representing “us” replies “..Do you mean the year 2000” in response to the other character saying they only recognize consoles made after 1111101000. With this in mind, I marked all consoles made after the year . Treating the areas marked as 1 and those not as 0, we can extract the following binary strings from the image . | 01110 -&gt; 14 | 01001 -&gt; 9 | 01110 -&gt; 14 | 10100 -&gt; 20 | 00101 -&gt; 5 | 01110 -&gt; 14 | 00100 -&gt; 4 | 01111 -&gt; 15 | . Now taking using a 1-indexed alphabet the numbers correspond to N I N T E N D O. HOWEVER, this is not the correct solution, entering this into the checker will result in a special message telling you to look closer. The only thing that makes sense would be to go through a similar process except this time we mark every console that was made by Nintendo. Doing the same extraction we end up with our final answer: Headache . Customer 5: Pneumatic Pneumonia . Link to Customer 5 . Customer 6: Cattlegories . Link to Customer 6 . Approach and Solution In my opinion the easiest of the puzzles. The puzzle’s title and flavor text clues us that the theme would about cuts of meat. Immediately here is what I got: . | Picture of Chuck Norris -&gt; Chuck Steak | Picture of Shoulder -&gt; Shoulder | Picture of Burger (Filet O Fish) -&gt; Filet | Picture of Skirt -&gt; Skirt Steak | Picture of Circle -&gt; Round | Picture of Map (flank maneuver) -&gt; Flank Steak | . After a bit of research the weird tools displayed are referred to as Shank, which also happens to be a cut of meat. I also found that for the pottery picture the tools displayed are called Ribs which also refers to a cut of meat . Following the same pattern as before, we use the number inside each image to extract the corresponding letter inside the word. After doing that and arranging them left to right, top to bottom we are left with our final answer Ranchero . Customer 7: Contents Included . Link to Customer 7 . Approach and Solution This problem is very straightforward, the flavor text hints that the individual is entertained by something, using this information and the fact that this puzzle is called Contents Included I made the assumption that the “flashcards” give us the content of a certain game/activity and we need to guess them. Here’s what I got for each of them, left to right, top to bottom. I also highlighted the letter that would fall in the box . | Checkers | Barrel O’ Monkeys | Monopoly | Hungry Hungry Hippos | Mousetrap | Taboo | Battleship | Bananagrams | . Using the highlighted (unfortunately it doesn’t really stand out) letters we get our final answer: CANISTER . Customer 8: Tournament of Numbers . Link to Customer 8 . META . Link to META . ",
     "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#link-to-the-hunt-includes-checker",
     
     "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/#link-to-the-hunt-includes-checker"
-  },"10": {
+  },"19": {
     "doc": "Aquarium Hunt 2013.",
     "title": "Aquarium Hunt 2013.",
     "content": " ",
     "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/",
     
     "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/"
-  },"11": {
+  },"20": {
+    "doc": "The Talking Cartographer (Puzzle 3)",
+    "title": "The Talking Cartographer",
+    "content": " ",
+    "url": "/docs/Puzzles/HTN%20CTF/MagicalDuck/#the-talking-cartographer",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/MagicalDuck/#the-talking-cartographer"
+  },"21": {
+    "doc": "The Talking Cartographer (Puzzle 3)",
+    "title": "The Talking Cartographer (Puzzle 3)",
+    "content": " ",
+    "url": "/docs/Puzzles/HTN%20CTF/MagicalDuck/",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/MagicalDuck/"
+  },"22": {
     "doc": "Neuron Imaging",
     "title": "Neuron Imaging",
     "content": ". Link to project: . The github is unfortunately privated so I am unable to provide a link. Cool Images . Original Image . Processed Image . Quick Introduction . In the “Original” image above there are 2 distinct colors, a bright green which is puromycin a protein, and a red which is neurofilament. The researchers we worked with believed that in CMT neurons are not producing certain proteins which results in the very distinct “red” without any “green” around it. Our project which collaborated with these scientists was to create a method that highlighted where these faulty axons are, to use in other settings like calculating florescence. In the above image, the blue within the “processed image” is what our method highlighted. — . My Takeaways . Solution I did some work as an Undergraduate Research Assistant from October 2024 to March 2025 directly led to the development of the “Neuron Imaging” projet. My core contribution was developing a Python algorithm to highlight axons within fluorescent images of neurons, a significant advancement that eliminated the need for manual tracing. Beyond this, I worked with a teammate to create a method that effectively eliminates noise within these images, drastically improving data quality and processing efficiency. This algorithm was subsequently integrated into a larger pipeline capable of processing hundreds of images rapidly, extracting information such as axon length and fluorescence. This artifact demonstrates my strong command of Python, my ability to design and implement efficient algorithms for scientific data processing, and my capacity to contribute to meaningful research outcomes. It showcases my problem-solving skills in enhancing data quality and automating labor-intensive tasks within a research environment. ",
     "url": "/docs/Projects/Neuron/",
     
     "relUrl": "/docs/Projects/Neuron/"
-  },"12": {
+  },"23": {
     "doc": "Feynman Technique",
     "title": "Feynman’s Technique",
     "content": "A niche technique for solving certain integrals that involves having the entire integral as a function of a newly created parameter . Not to be confused with Feynman’s Technique or Feynman Parametrization. In fact this method was originally derived by Leibniz . Let’s start with a simple example . We’re give the following integral to solve. ∫01x7−1ln⁡xdx \\int_0^1 \\frac{x^7-1}{\\ln{x}} dx ∫01​lnxx7−1​dx Traditional methods for this will not work, in fact Integral Calculator returns a numerical estimation as it’s unable to find a closed form solution. In this scenario we apply Feynman’s technique to solve the integral. First we parameterize the function I(α)=∫01x7α−1ln⁡xdx I(\\alpha) = \\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I(α)=∫01​lnxx7α−1​dx . We can see that our initial integral is equal to I(1)I(1)I(1) . We take the derivative of both sides with respect to the parameter. I′(α)=∂I∂α∫01x7α−1ln⁡xdx I&#x27;(\\alpha) = \\frac{\\partial I}{\\partial \\alpha}\\int_0^1 \\frac{x^{7\\alpha}-1}{\\ln{x}} dx I′(α)=∂α∂I​∫01​lnxx7α−1​dx Since the bounds of the integral are not functions of our parameter, and our function is continuous within said bound. We are able to “flip” the order of integration and differentiation . I′(α)=∫01∂I∂α (x7α−1ln⁡x) dx=∫017x7αln⁡xln⁡xdx=∫017x7αdx=7x7α+17α+1∣01=77α+1\\begin{aligned} I&#x27;(\\alpha) &amp;= \\int_0^1 \\frac{\\partial I}{\\partial \\alpha} \\ \\left(\\frac{x^{7\\alpha}-1}{\\ln{x}}\\right) \\ dx \\\\ &amp;= \\int_0^1 \\frac{7x^{7\\alpha}\\ln{x}}{\\ln{x}} dx \\\\ &amp;= \\int_0^1 7x^{7\\alpha} dx \\\\ &amp;= \\left. \\frac{7x^{7\\alpha + 1}}{7\\alpha + 1}\\right|_0^1 \\\\ &amp;= \\frac{7}{7\\alpha + 1} \\end{aligned}I′(α)​=∫01​∂α∂I​ (lnxx7α−1​) dx=∫01​lnx7x7αlnx​dx=∫01​7x7αdx=7α+17x7α+1​∣∣∣∣∣​01​=7α+17​​ . If we remember the fundamental theorem of calculus we know that . F(b)−F(a)=∫abf(x)dxwhere  f(x)=F′(x) F(b) - F(a) = \\int_a^b f(x) dx \\qquad \\text{where }\\ f(x) = F&#x27;(x) F(b)−F(a)=∫ab​f(x)dxwhere  f(x)=F′(x) Applying this to our context we can write that I(1)−I(0)=∫01I′(α) dα I(1) - I(0) = \\int_0^1 I&#x27;(\\alpha) \\ d\\alphaI(1)−I(0)=∫01​I′(α) dα From our original parameterization we see that if we set α=0\\alpha = 0α=0 I(0)=∫01x0−1ln⁡x=0I(0) = \\int_0^1 \\frac{x^{0}-1}{\\ln{x}}=0I(0)=∫01​lnxx0−1​=0 Therefore our equation becomes I(1)=∫01I′(α) dα=∫0177α+1 dα=ln⁡(7α+1)∣01=ln⁡8−ln⁡1=ln⁡8\\begin{aligned} I(1) &amp;= \\int_0^1 I&#x27;(\\alpha) \\ d\\alpha \\\\ &amp;= \\int_0^1 \\frac{7}{7\\alpha + 1} \\ d\\alpha \\\\ &amp;= \\left.\\ln{(7\\alpha + 1)} \\right|_0^1 \\\\ &amp;= \\ln{8} - \\ln{1} \\\\ &amp;= \\boxed{\\ln{8}} \\end{aligned}I(1)​=∫01​I′(α) dα=∫01​7α+17​ dα=ln(7α+1)∣01​=ln8−ln1=ln8​​ . Thus we arrive at our final answer ∫01x7−1ln⁡x dx=ln⁡8\\int_0^1 \\frac{x^7-1}{\\ln{x}}\\ dx = \\ln{8}∫01​lnxx7−1​ dx=ln8 . ",
     "url": "/docs/Math/Problem1/#feynmans-technique",
     
     "relUrl": "/docs/Math/Problem1/#feynmans-technique"
-  },"13": {
+  },"24": {
     "doc": "Feynman Technique",
     "title": "Feynman Technique",
     "content": " ",
     "url": "/docs/Math/Problem1/",
     
     "relUrl": "/docs/Math/Problem1/"
-  },"14": {
+  },"25": {
     "doc": "Traceless",
     "title": "Traceless",
     "content": ". Link to project: Link . Quick Introduction . This was a project developed by me and some friends at a local hackathon, the theme was “Privacy and Security” and we developed a platform that allowed users to change or delete media metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy. My Story . Solution The “Traceless” project, showcases my capabilities in full-stack web engineering and AI integration. As a member of the team I conceived and built this platform to grant users greater control over their metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy. My process involved leveraging Flask for the backend and React for a dynamic frontend, ensuring a cohesive and intuitive UX. A significant aspect of my work was the development and integration of a PyTorch-based AI model designed for image analysis, accurately identifying key visual features that could potentially give away important information (like license plates, street signs etc.). This model enhances user safety and privacy by allowing precise metadata control across diverse media types. The inclusion of “Traceless” in this portfolio demonstrates my strength in developing comprehensive, user-centric web applications from conception to implementation, effectively bridging the gap between sophisticated AI models and practical user functionalities. It highlights my proficiency in Python, Flask, React, TypeScript, PyTorch, Figma, CSS, and HTML. ",
     "url": "/docs/Projects/Traceless/",
     
     "relUrl": "/docs/Projects/Traceless/"
-  },"15": {
-    "doc": "Projects and Files",
-    "title": "Projects and Files",
-    "content": "This is going to be a compliation of some projects and files that are relevant to mes . ",
-    "url": "/docs/Projects/",
-    
-    "relUrl": "/docs/Projects/"
-  },"16": {
-    "doc": "Jane Street Puzzles",
-    "title": "Jane Street Puzzles",
-    "content": "Page with my approach/Solution to some Jane Street Puzzles . ",
-    "url": "/docs/Puzzles/Jane%20Street/",
-    
-    "relUrl": "/docs/Puzzles/Jane%20Street/"
-  },"17": {
-    "doc": "Puzzles",
-    "title": "Puzzles",
-    "content": "This is going to be a list of some cool puzzles I solved. ",
-    "url": "/docs/Puzzles/",
-    
-    "relUrl": "/docs/Puzzles/"
-  },"18": {
-    "doc": "Math",
-    "title": "Math",
-    "content": "This is going to be a compilation of all the cool math problems I’ve done, it’s going to be limited to algebra since inserting figures for geometry is quite tedious. ",
-    "url": "/docs/Math/",
-    
-    "relUrl": "/docs/Math/"
-  },"19": {
+  },"26": {
     "doc": "Home",
     "title": "Welcome to my website!.",
     "content": "This website is currently WIP I will be adding alot more stuff in the coming weeks. Hello! I’m Jeremy a Computer Science at University of Washington student passionate about building software for personal entertainment and to solve real world problems. In the past I was a Game Developer on Everlune, I led content updates for 3,000+ monthly players, gaining valuable experience in teamwork and user-focused design. These experiences reflect my drive to build smart, efficient systems that make an impact. At UW, I developed Python algorithms for neuron image analysis and noise reduction, improving data quality and processing efficiency. All with the goal of pushing research for CMT disease research . My recent projects explore AI/ML, including a PyTorch image analysis model (Traceless), a GPT-2 model built from scratch, and a face morphing and data sync system (Looking Glass). I’m also currently exploring low level computer science through learning Rust and circuit design, I hope to use these skills to optimize my projects in the future. ",
     "url": "/#welcome-to-my-website",
     
     "relUrl": "/#welcome-to-my-website"
-  },"20": {
+  },"27": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"21": {
+  },"28": {
+    "doc": "Math",
+    "title": "Math",
+    "content": "This is going to be a compilation of all the cool math problems I’ve done, it’s going to be limited to algebra since inserting figures for geometry is quite tedious. ",
+    "url": "/docs/Math/",
+    
+    "relUrl": "/docs/Math/"
+  },"29": {
     "doc": "MIT Aquarium Hunt Puzzles",
     "title": "MIT Aquarium Hunt Puzzles",
     "content": "Page with my approach/Solution to some of the MIT Aquarium puzzle hunt puzzles. ",
     "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/",
     
     "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/"
-  },"22": {
+  },"30": {
     "doc": "HackTheNorth CTF",
     "title": "HackTheNorth CTF",
     "content": "Page with (some of) the solutions for HackTheNorth’s 2025 CTF. If you wish to try the CTF for yourself you should check out this Video to get started! . ",
     "url": "/docs/Puzzles/HTN%20CTF/",
     
     "relUrl": "/docs/Puzzles/HTN%20CTF/"
+  },"31": {
+    "doc": "Projects and Files",
+    "title": "Projects and Files",
+    "content": "This is going to be a compliation of some projects and files that are relevant to mes . ",
+    "url": "/docs/Projects/",
+    
+    "relUrl": "/docs/Projects/"
+  },"32": {
+    "doc": "Jane Street Puzzles",
+    "title": "Jane Street Puzzles",
+    "content": "Page with my approach/Solution to some Jane Street Puzzles . ",
+    "url": "/docs/Puzzles/Jane%20Street/",
+    
+    "relUrl": "/docs/Puzzles/Jane%20Street/"
+  },"33": {
+    "doc": "Puzzles",
+    "title": "Puzzles",
+    "content": "This is going to be a list of some cool puzzles I solved. ",
+    "url": "/docs/Puzzles/",
+    
+    "relUrl": "/docs/Puzzles/"
   }
 }

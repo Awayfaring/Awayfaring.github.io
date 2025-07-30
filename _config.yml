@@ -16,7 +16,9 @@ aux_links:
 aux_links_new_tab: false
 
 #
+# Color scheme supports "light" (default) and "dark"
 color_scheme: dark
+
 
 # Plugins
 plugins:

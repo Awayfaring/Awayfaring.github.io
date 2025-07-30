@@ -39,8 +39,6 @@ From these calculations you can make 2 observations
 > If `x` **maps to ** `y`, then in an equation replace every instance of `x` with `y`.
 
 {: .obs }
-> Observation 1:
->
 > It is likely that
 >
 > 3 maps to 2
@@ -50,8 +48,6 @@ From these calculations you can make 2 observations
 > 8 maps to 10
 
 {: .obs }
-> Observation 2:
->
 > `+` maps to `*`
 >
 > `-` maps to `+`
@@ -89,8 +85,6 @@ From these calculations you can make 2 observations
 > If `x` **maps to ** `y`, then in an equation replace every instance of `x` with `y`.
 
 {: .obs }
-> Observation 1:
->
 > It is likely that
 >
 > 2 maps to 5
@@ -100,8 +94,6 @@ From these calculations you can make 2 observations
 > 6 maps to 9
 
 {: .obs }
-> Observation 2:
->
 > `+` maps to `*`, and vice versa
 
 Since the prime factorization of `315` is `5 * 7 * 9`, by reversing the mapping we defined above we know that for our calculator `315 = 2 + 4 + 6`
@@ -135,11 +127,9 @@ This problem is more complicated than the last one, from these calculations I be
 {: .important }
 > Here's what I mean by **maps to**
 >
-> If `x` **maps to** `y`, then in an equation replace every instance of `x` with `y`.
+> If `x` **maps to ** `y`, then in an equation replace every instance of `x` with `y`.
 
 {: .obs }
-> Observation 1:
->
 > It is likely that
 >
 > 2 maps to 5
@@ -149,8 +139,6 @@ This problem is more complicated than the last one, from these calculations I be
 > 3 maps to 3
 
 {: .obs }
-> Observation 2:
->
 > `+` maps to `^`
 
 Then I did a few more calculations targeted towards `÷`
@@ -166,12 +154,13 @@ Then I did a few more calculations targeted towards `÷`
 
 After these calculations I am fairly convinced that 
 
-{: .obs }
-> Observation 3:
->
+{: .obs}
 > `÷` maps to `-`
 
 Since we can write `123` as `125 - 2` or `5 ^ 3 - 2`, reversing the mapping we defined above we can write that as `2 + 3 ÷ 4`
 
 Our final answer is **2 + 3 ÷ 4**
+
+**Congrats you got a**
+# ⭐
 </details>
