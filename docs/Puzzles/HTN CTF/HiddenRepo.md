@@ -113,7 +113,7 @@ We immediately see a red tag warning us to be careful and the file tree looks a 
     vault.zip (Encrypted)
 ```
 
-In the big warning at the it suggests you try to download the files however unlike in `main` clicking on them doesn't bring up anything interesting.
+The warning suggests you try to download the files however unlike in `main` clicking on them doesn't bring up anything interesting.
 After a little snooping around you find the link to download the relevant files are located within `/commits/9i8h7g6`.
 
 Upon downloading and extracting `vault.zip`

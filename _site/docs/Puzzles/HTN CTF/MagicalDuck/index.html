@@ -288,6 +288,95 @@ document.addEventListener("DOMContentLoaded", function() {
   
   
 </h1>
+    
+
+<p>This puzzle is a bit scuffed, either information is time dependent or it just takes alot of baseless snooping around. So unlike Puzzle 1/2 in which I mostly used logic to move forward, alot of what I say here is just “I snooped around and found useful information”.</p><hr />
+<h3 id="stage-1">
+  
+  
+    <a href="#stage-1" class="anchor-heading" aria-labelledby="stage-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Stage 1
+  
+  
+</h3>
+    
+
+<p>We are given the following prompt</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Stage 1: The mystical goose appears before you, eyes glowing with ancient wisdom.
+
+"Honk! Traveler, you seek the path through shadows deep. Listen well...
+
+You must trace the path from where the gathering begins... to where creation flows.
+
+Along your journey, near University and Albert, you'll glimpse a chariot of the city-marked with numbers and destination.
+
+What words does the vessel bear?"
+</code></pre></div></div>
+
+<p>I think significant context to this question is the fact that HTN is hosted by <a href="https://en.wikipedia.org/wiki/University_of_Waterloo">University of Waterloo</a>.</p>
+
+<p>From this I gathered that the following line likely takes us to the physical campus of waterloo</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You must trace the path from where the gathering begins... to where creation flows.
+</code></pre></div></div>
+
+<p>In this context <strong>University</strong> and <strong>Albert</strong> sound like street names.</p>
+
+<p>Going onto Google Maps and going to the intersection of <em>University</em> and <em>Albert</em> you will a bus labled <strong>19B Northfield Station</strong>
+If you do not see this you will need to change the street view to <strong>June 2024</strong></p>
+
+<p>Our answer for this stage is <strong>19B Northfield Station</strong></p><hr />
+<h3 id="part-2">
+  
+  
+    <a href="#part-2" class="anchor-heading" aria-labelledby="part-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 2
+  
+  
+</h3>
+    
+
+<p>We are given the following prompt</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Stage 2: The path brightens, and the goose's eyes gleam with approval.
+
+"Well done, traveler! The digital realm has revealed its secrets to you.
+But now you must bridge the worlds - virtual and physical unite.
+
+Hidden whispers have been scattered like feathers in the digital wind.
+Inspect the realm beneath the surface, where developers speak in silence.
+These whispers hold coordinates to a sacred monument of this land.
+
+Decode the ancient tongue, then venture forth with your own feet!
+The true pilgrimage demands your physical presence.
+Upon the monument, thick with paint, lies the next key."
+</code></pre></div></div>
+
+<p>I think the key word for this part of the puzzle is <strong>Inspect</strong>. There was a point in time where “Developer Tools” was simply known as “Inspect”.
+Going off this hunch I opened developer tools and clicked through the tabs.</p>
+
+<p>Once I got to console I was greeted with the following message. <em>(In hindsight “developers speak in silence” alludes to the terminal/console. When you use the console it’s akin to “speaking” to it but you obviously aren’t making any sound)</em></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">A</span> <span class="nx">feather</span> <span class="nx">lands</span><span class="p">...</span>
+    <span class="nx">Whisper</span><span class="p">:</span> <span class="nx">NDMuNDcwNSAtODAuNTM5Mg</span><span class="o">==</span>
+</code></pre></div></div>
+<p>After trying a bunch of deciphering tools online the one that revealed any info was <strong>Base 64</strong>.</p>
+
+<p>The base 64 conversion of the <em>Whisper</em> returns</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>43.4705 -80.5392
+</code></pre></div></div>
+
+<p>Going to google maps and plugging in these coordinates you are taken to this <a href="https://www.google.com/maps/place/43%C2%B028'13.8%22N+80%C2%B032'21.1%22W/@43.4705084,-80.5392093,2a,60y,108.92h,87.79t/data=!3m7!1e1!3m5!1sJGbkOemsyPURj_SDlBZEmA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D2.208027556179161%26panoid%3DJGbkOemsyPURj_SDlBZEmA%26yaw%3D108.91709372934048!7i13312!8i6656!4m4!3m3!8m2!3d43.4705!4d-80.5392?entry=ttu&amp;g_ep=EgoyMDI1MDcyOC4wIKXMDSoASAFQAw%3D%3D">Statue</a>. The image of the statue on google maps doesn’t have any relevant text. However, a <a href="https://www.reddit.com/r/uwaterloo/comments/1ln3y53/waterloo_statue_appreciation_post/">Reddit Post</a> was made during the CTF and upon careful inspection of the first image attached you can spot the words <strong>Northbound Echo</strong> written in the base of the statue.</p>
+
+<p>Our answer for this stage is <strong>Northbound Echo</strong></p><hr />
+<h3 id="part-3">
+  
+  
+    <a href="#part-3" class="anchor-heading" aria-labelledby="part-3"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 3
+  
+  
+</h3>
+    <hr />
 
           
 
