@@ -2,6 +2,8 @@
 layout: default
 parent: Projects and Files
 title: Neuron Imaging
+nav_exclude: true
+search_exclude: true
 nav_order: 3
 ---
 # Neuron Imaging

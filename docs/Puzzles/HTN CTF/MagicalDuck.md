@@ -77,6 +77,40 @@ Our answer for this stage is **Northbound Echo**
 ----
 ### Part 3
 
+Like the 2 parts before it, the magical goose greets us with a message: 
+
+    "Magnificent, traveler! You have proven worthy of the final trial.
+
+    The sacred communication sequence reveals itself:
+    Five shadows gather at the edge of the bay,
+    Four winds spiral through eight iron gates.
+    Beyond them, nine bells toll for none.
+    Zero paths diverge at the silent fork-
+    Zero again, as time loops back.
+    Nine stars blink in mirrored skies,
+    Two rivers cross in the hollow, with zero planks,
+    And five paces later, the message waits."
+
+I'll say right here, I'm not confident that the way I solved this puzzle was intended.
+
+First I extracted the numbers in order from within this text, this left me with the followng  `5489009205`
+
+Splitting it up as a phone number we have  `(548)-900-9205`.
+
+After verifying that `548` is the area code in which Waterloo is located I proceeded to call the number.
+
+Receives the following message
+
+    "Cradled in earth where the fire once slept, and born of the heat where the ancients wept
+    blood of the moutain hardened and clear, a gem among stone where the brave often tread."
+
+If you say a guess anytime that voice on the other side is speaking it will respond with another clue. In my case I guessed *Diamond* and the voice responded with. 
+
+    "Think of a gem with a fiery hue that shares it's name with something in coding"
+
+As such the only answer that applies would be **Ruby** which is the correct answer. In fact if you answer **Ruby** into the call it would automatically hang up.
+
+Final Answer: **Ruby**
 
 ---
 

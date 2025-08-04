@@ -27,16 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > ul > li:nth-child(3) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(3) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(4) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > ul > li:nth-child(3) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(3) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(3) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(3) > ul.nav-list {
       display: block;
     }
   </style>
@@ -209,9 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Problem1/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Projects and Files category" aria-pressed="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Projects/" class="nav-list-link">Projects and Files</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Projects/FileStuff/" class="nav-list-link">Relevant Files</a></li><li class="nav-list-item"><a href="/docs/Projects/Traceless/" class="nav-list-link">Traceless</a></li><li class="nav-list-item"><a href="/docs/Projects/Neuron/" class="nav-list-link">Neuron Imaging</a></li><li class="nav-list-item"><a href="/docs/Projects/LookingGlass/" class="nav-list-link">Looking Glass</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
+      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Problem1/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/docs/Puzzles/" class="nav-list-link">Puzzles</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in HackTheNorth CTF category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -376,7 +374,45 @@ Going off this hunch I opened developer tools and clicked through the tabs.</p>
   
   
 </h3>
-    <hr />
+    
+
+<p>Like the 2 parts before it, the magical goose greets us with a message:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"Magnificent, traveler! You have proven worthy of the final trial.
+
+The sacred communication sequence reveals itself:
+Five shadows gather at the edge of the bay,
+Four winds spiral through eight iron gates.
+Beyond them, nine bells toll for none.
+Zero paths diverge at the silent fork-
+Zero again, as time loops back.
+Nine stars blink in mirrored skies,
+Two rivers cross in the hollow, with zero planks,
+And five paces later, the message waits."
+</code></pre></div></div>
+
+<p>I’ll say right here, I’m not confident that the way I solved this puzzle was intended.</p>
+
+<p>First I extracted the numbers in order from within this text, this left me with the followng  <code class="language-plaintext highlighter-rouge">5489009205</code></p>
+
+<p>Splitting it up as a phone number we have  <code class="language-plaintext highlighter-rouge">(548)-900-9205</code>.</p>
+
+<p>After verifying that <code class="language-plaintext highlighter-rouge">548</code> is the area code in which Waterloo is located I proceeded to call the number.</p>
+
+<p>Receives the following message</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"Cradled in earth where the fire once slept, and born of the heat where the ancients wept
+blood of the moutain hardened and clear, a gem among stone where the brave often tread."
+</code></pre></div></div>
+
+<p>If you say a guess anytime that voice on the other side is speaking it will respond with another clue. In my case I guessed <em>Diamond</em> and the voice responded with.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"Think of a gem with a fiery hue that shares it's name with something in coding"
+</code></pre></div></div>
+
+<p>As such the only answer that applies would be <strong>Ruby</strong> which is the correct answer. In fact if you answer <strong>Ruby</strong> into the call it would automatically hang up.</p>
+
+<p>Final Answer: <strong>Ruby</strong></p><hr />
 
           
 

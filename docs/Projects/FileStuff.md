@@ -3,6 +3,8 @@ layout: default
 parent: Projects and Files
 title: Relevant Files
 nav_order: 1
+nav_exclude: true
+search_exclude: true
 ---
 ## Relevant Files
 

@@ -27,16 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > ul > li:nth-child(4) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(4) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(4) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(1) > ul > li:nth-child(4) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(4) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(4) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(4) > ul.nav-list {
       display: block;
     }
   </style>
@@ -209,9 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Problem1/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Projects and Files category" aria-pressed="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Projects/" class="nav-list-link">Projects and Files</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Projects/FileStuff/" class="nav-list-link">Relevant Files</a></li><li class="nav-list-item"><a href="/docs/Projects/Traceless/" class="nav-list-link">Traceless</a></li><li class="nav-list-item"><a href="/docs/Projects/Neuron/" class="nav-list-link">Neuron Imaging</a></li><li class="nav-list-item"><a href="/docs/Projects/LookingGlass/" class="nav-list-link">Looking Glass</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
+      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Problem1/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/docs/Puzzles/" class="nav-list-link">Puzzles</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in HackTheNorth CTF category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -288,9 +286,431 @@ document.addEventListener("DOMContentLoaded", function() {
   
   
 </h1>
+    <hr />
+<h2 id="part-1-for-the-first-">
+  
+  
+    <a href="#part-1-for-the-first-" class="anchor-heading" aria-labelledby="part-1-for-the-first-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 1 (For the first ⭐)
+  
+  
+</h2>
     
 
-<p>This puzzle revolves around interacting with a terminal</p>
+<p>We first follow the instructions provided in the terminal by executing</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ fetch manual-000
+</code></pre></div></div>
+
+<p>After opening the link provided and skimming through you will see this at the bottom of the page.</p>
+
+<blockquote>
+  <p>For archival, this manual is also provided
+in such format. <br />
+• Common Tongue: manual-000 <br />
+• dxmguqa: nhxlhg-000</p>
+</blockquote>
+
+<p>As such our next intuition is to call</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ fetch nhxlhg-000
+</code></pre></div></div>
+
+<p>Opening <code class="language-plaintext highlighter-rouge">nhxlhg-000</code> we see that the entire file is written in the glyph language, as such we would need to build a translator in order to understand its contents.</p>
+
+<p>Thankfully the cipher used is a single subsitution cipher, additionally we are provided with 2 documents that contain the same contents but one in plaintext and the other in cipher text. As such, we can easily write a program that would allow us to decipher the document.</p>
+
+<p>I used the following text</p>
+
+<blockquote>
+  <p>The Archive Terminal provides access to authorized records within the Grand Library. Zealous
+archivists quickly jump to fetch valuable knowledge buried in quartz-lined vaults. Tampering
+with node pathways is expressly prohibited.</p>
+</blockquote>
+
+<p>Along with (the corresponding text within <code class="language-plaintext highlighter-rouge">nhxlhg-000</code>)</p>
+
+<blockquote>
+  <p>tad howaurd tdonuxhg jofrubdq hwwdqq tf hltafouvdb odwfobq sutaux tad mohxb gucohoy.
+vdhgflq howauruqtq zluwkgy ilnj tf edtwa rhglhcgd kxfsgdbmd cloudb ux zlhotv-guxdb rhlgtq.
+thnjdouxm suta xfbd jhtashyq uq dpjodqqgy jofaucutdb.</p>
+</blockquote>
+
+<p>To create the key.</p>
+
+<p>Using the key we are able to decipher the line of text at the bottom of <code class="language-plaintext highlighter-rouge">nhxlhg-000</code> (which was “damaged” in manual-000) to reveal</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The employee conversation board is maintained in english. To access it, fetch page cfhob-141. 
+</code></pre></div></div>
+
+<p>Fetching <code class="language-plaintext highlighter-rouge">cfhob-141</code> and translating its contents we are presented with a conversation bewteen a few individuals</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>board-141 
+
+Employee board rzfvhuu5xhlfw 
+
+Post: notes in the jar? 
+
+grenn.j 
+I can’t believe we’re hiding fortune cookie notes in the cookie jar. 
+maxe.p 
+Every time I grab a treat I find a note instead. 
+Feels like they want us to read our own secrets. 
+julu.k 
+Next thing you know, they’ll stash riddles in the sugar bowl. 
+jenn.o 
+Just be careful not to eat the paper by accident. 
+I already bit into a note this morning. 
+
+They say the next lead lies outside the box. 
+</code></pre></div></div>
+
+<p>Here’s the step that took the longest for me, when they mention “hiding notes in the cookie jar” they’re alluding to actual cookies that websites use. (If you paid attention in the “What you should do” section of the info tab they explicitly say you SHOULD <em>Inspect browser source code, file metadata, and cookies, etc</em>).</p>
+
+<p>To accomplish this step we access <em>Developer Tools</em> and under <em>Application</em> find the <em>Cookies</em> tab. In it we will spot a cookie with the name <code class="language-plaintext highlighter-rouge">archivists-memo-page</code> and it holds the value <code class="language-plaintext highlighter-rouge">intmemo-424</code></p>
+
+<p>Fetching <code class="language-plaintext highlighter-rouge">intmemo-424</code> will grant you the first ⭐</p>
+<h2 id="-acquired">
+  
+  
+    <a href="#-acquired" class="anchor-heading" aria-labelledby="-acquired"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ⭐ Acquired.
+  
+  
+</h2>
+    <hr />
+<h2 id="part-2-for-the-second-">
+  
+  
+    <a href="#part-2-for-the-second-" class="anchor-heading" aria-labelledby="part-2-for-the-second-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Part 2 (For the second ⭐)
+  
+  
+</h2>
+    
+
+<p>Opening up <code class="language-plaintext highlighter-rouge">intmemo-424</code></p>
+
+<blockquote>
+  <p>Archivists,</p>
+</blockquote>
+
+<blockquote>
+  <p>Has anyone gotten the <code class="language-plaintext highlighter-rouge">serve()</code> command we heard about in old manuals to work? I’ve heard
+rumors it’s tied to <code class="language-plaintext highlighter-rouge">top-secret-999</code>, but I’ve never seen it succeed on any terminal we’ve got
+access to. The parentheses are strange too … not a format I’ve seen in our usual commands.</p>
+</blockquote>
+
+<blockquote>
+  <p>Maybe it’s designed for a different interface entirely. Hard to say xlncdoq.</p>
+</blockquote>
+
+<blockquote>
+  <p>If anyone gets a result, document it and please let me know. Until then, I guess it’s a system
+myth.</p>
+</blockquote>
+
+<blockquote>
+  <p>Archivist Tycho Renn</p>
+</blockquote>
+
+<p>The structure of the command <code class="language-plaintext highlighter-rouge">serve()</code>, the phrase <em>“Maybe it’s designed for a different interface entirely…”</em> are big clues that you’re supposed to use the <strong>console within developer tools</strong>.</p>
+
+<p>(If you try to use <code class="language-plaintext highlighter-rouge">serve()</code> within the terminal inside the website you’ll be greeted with <code class="language-plaintext highlighter-rouge">serve: access denied - console authorization required</code>)</p>
+
+<p>Accessing <em>Developer Tools</em> and accesing <em>Console</em> we can type in our command</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ serve("top-secret-999")
+</code></pre></div></div>
+
+<p>And we’ll be granted access to <code class="language-plaintext highlighter-rouge">top-secret-999</code></p>
+
+<blockquote>
+  <p>To the High Committee,</p>
+</blockquote>
+
+<blockquote>
+  <p>Since the addition of the flag command to our documentation systems, we’ve observed a
+concerning shift in translator behavior. Pages processed normally are beginning to show strange
+inconsistencies: certain words are English, but appear in our archival glyph script. Others remain
+in cipher, yet are embedded directly into standard-language paragraphs without proper
+transformation. We are compiling affected documents for pattern analysis, but a preliminary scan
+of our archives has revealed this behavior in 4 documents:</p>
+</blockquote>
+
+<blockquote>
+  <p>• manual-000 <br />
+• nhxlhg-000 <br />
+• cfhob-141 <br />
+• intmemo-424</p>
+</blockquote>
+
+<blockquote>
+  <p>No such behavior was observed prior to the update v8132 rev2 release4. The translators claim no
+memory. Whether this is a miscommunication, a misalignment in training, or something more
+deliberate, the irregularities are undeniable.</p>
+</blockquote>
+
+<blockquote>
+  <p>Continued investigation is critical.</p>
+</blockquote>
+
+<blockquote>
+  <p>Archivist General Lunebreach the Silent</p>
+</blockquote>
+
+<p>Inside this file we are told that there are some strange bugs within the documents listed, where supposedly english documents contain words in glyph and documents in glyph contain english words.</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Document</th>
+      <th style="text-align: left">Misplaced Text</th>
+      <th style="text-align: left">Converted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">manual-000</code></td>
+      <td style="text-align: left">eghmuq</td>
+      <td style="text-align: left">flag is</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">nhxlhg-000</code></td>
+      <td style="text-align: left">sumof</td>
+      <td style="text-align: left">sum of</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">cfhob-141</code></td>
+      <td style="text-align: left">overall5pages</td>
+      <td style="text-align: left">overall 5 pages</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">intmemo-424</code></td>
+      <td style="text-align: left">xlncdoq</td>
+      <td style="text-align: left">numbers</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><strong>flag is sum of overall 5 pages numbers</strong></p>
+
+<p>Here I will have the 5 pages and their respective numbers bolded (000 doesn’t contribute anything to the sum so I will not bold it)</p>
+
+<details>
+  <summary>manual-000</summary>
+
+  <blockquote>
+    <p>manual-000</p>
+
+    <p>ARCHIVE TERMINAL USER MANUAL</p>
+
+    <p>System Version: v<strong>8813</strong> rev<strong>1</strong> release0</p>
+
+    <p>The Archive Terminal provides access to authorized records within the Grand Library. Zealous
+archivists quickly jump to fetch valuable knowledge buried in quartz-lined vaults. Tampering
+with node pathways is expressly prohibited.</p>
+
+    <p>Core Command</p>
+
+    <p>Only one command is required for basic access:</p>
+
+    <p>fetch <page-id></page-id></p>
+
+    <p>This command queries the system and yields a direct download link. All page identifiers follow
+the HackyDecimal classification format eghmuq.</p>
+
+    <p>Translations</p>
+
+    <p>Documents may appear in archival glyph script. It is recommended translators build tools to
+translate cyphers and then transcribe them into glyphs. For archival, this manual is also provided
+in such format.</p>
+
+    <p>• Common Tongue: manual-000<br />
+• dxmguqa: nhxlhg-000</p>
+
+    <p>[The remainder of this page is damaged and unreadable.]</p>
+  </blockquote>
+</details>
+
+<details>
+  <summary>nhxlhg-000</summary>
+
+  <blockquote>
+    <p>nhxlhg-000</p>
+
+    <p>HOWAURD TDONUXHG LQDO NHXLHG</p>
+
+    <p>Qyqtdn Rdoqufx: r<strong>8813</strong> odr<strong>1</strong> odgdhqd0</p>
+
+    <p>tad howaurd tdonuxhg jofrubdq hwwdqq tf hltafouvdb odwfobq sutaux tad mohxb gucohoy.
+vdhgflq howauruqtq zluwkgy ilnj tf edtwa rhglhcgd kxfsgdbmd cloudb ux zlhotv-guxdb rhlgtq.
+thnjdouxm suta xfbd jhtashyq uq dpjodqqgy jofaucutdb.</p>
+
+    <p>Wfod Wfnnhxb</p>
+
+    <p>fxgy fxd wfnnhxb uq odzluodb efo chquw hwwdqq:</p>
+
+    <p>fetch &lt; jhmd-ub&gt;</p>
+
+    <p>tauq wfnnhxb zldoudq tad qyqtdn hxb yudgbq h buodwt bfsxgfhb guxk. hgg jhmd ubdxtueudoq
+efggfs tad ahwkybdwunhg wghqqueuwhtufx efonht sumof.</p>
+
+    <p>Tohxqghtufxq</p>
+
+    <p>bfwlndxtq nhy hjjdho ux howaurhg mgyja qwoujt. ut uq odwfnndxbdb tohxqghtfoq clugb tffgq tf
+tohxqghtd wyjadoq hxb tadx tohxqwoucd tadn uxtf mgyjaq. efo howaurhg, tauq nhxlhg uq hgqf
+jofrubdb ux qlwa efonht.</p>
+
+    <p>• Common Tongue: manual-000 <br />
+• dxmguqa: nhxlhg-000</p>
+
+    <p>tad dnjgfydd wfxrdoqhtufx cfhob uq nhuxthuxdb ux dxmguqa. tf hwwdqq ut, edtwa jhmd weafc-<strong>141</strong>.</p>
+  </blockquote>
+
+</details>
+
+<details>
+  <summary>cfhob-121</summary>
+
+  <blockquote>
+    <p>cfhob-<strong>141</strong></p>
+
+    <p>dnjgfydd cfhob overall<strong>5</strong>pages</p>
+
+    <p>jfqt: xftdq ux tad iho?</p>
+
+    <p>modxx.i</p>
+
+    <p>u whx’t cdgudrd sd’od aubuxm efotlxd wffkud xftdq ux tad wffkud iho.</p>
+
+    <p>nhpd.j</p>
+
+    <p>drdoy tund u mohc h todht, u euxb h xftd uxqtdhb.</p>
+
+    <p>eddgq gukd tady shxt lq tf odhb flo fsx qdwodtq.</p>
+
+    <p>ilgl.k</p>
+
+    <p>xdpt tauxm yfl kxfs, tady’gg qthqa oubbgdq ux tad qlmho cfsg.</p>
+
+    <p>idxx.f</p>
+
+    <p>ilqt cd whodelg xft tf dht tad jhjdo cy hwwubdxt.</p>
+
+    <p>u hgodhby cut uxtf h xftd tauq nfoxuxm.</p>
+
+    <p>tady qhy tad xdpt gdhb gudq fltqubd tad cfp.</p>
+  </blockquote>
+</details>
+
+<details>
+  <summary>intmemo-424</summary>
+
+  <blockquote>
+    <p>intmemo-<strong>424</strong><br />
+<br />
+INTERNAL MEMORANDUM<br />
+<br />
+Classification Level: Internal<br />
+<br />
+Archivists,<br />
+<br />
+Has anyone gotten the serve() command we heard about in old manuals to work? I’ve heard
+rumors it’s tied to top-secret-<strong>999</strong>, but I’ve never seen it succeed on any terminal we’ve got
+access to. The parentheses are strange too… not a format I’ve seen in our usual commands.<br />
+<br />
+Maybe it’s designed for a different interface entirely. Hard to say xlncdoq.<br />
+<br />
+If anyone gets a result, document it and please let me know. Until then, I guess it’s a system
+myth. <br />
+<br />
+Archivist Tycho Renn</p>
+  </blockquote>
+</details>
+
+<details>
+  <summary>top-secret-999</summary>
+
+  <blockquote>
+    <p>top-secret-<strong>999</strong><br />
+<br />
+COUNCIL MEMO: TRANSLATION IRREGULARITIES<br />
+<br />
+Classification Level: Top Secret<br />
+<br />
+To the High Committee,<br />
+<br />
+Since the addition of the flag command to our documentation systems, we’ve observed a
+concerning shift in translator behavior. Pages processed normally are beginning to show strange
+inconsistencies: certain words are English, but appear in our archival glyph script. Others remain
+in cipher, yet are embedded directly into standard-language paragraphs without proper
+transformation. We are compiling affected documents for pattern analysis, but a preliminary scan
+of our archives has revealed this behavior in <strong>4</strong> documents:<br />
+<br />
+• manual-000<br />
+• nhxlhg-000<br />
+• cfhob-<strong>141</strong><br />
+• intmemo-<strong>424</strong> <br />
+<br />
+No such behavior was observed prior to the update v<strong>8132</strong> rev<strong>2</strong> release<strong>4</strong>. The translators claim no
+memory. Whether this is a miscommunication, a misalignment in training, or something more
+deliberate, the irregularities are undeniable.<br />
+<br />
+Continued investigation is critical.<br />
+<br />
+Archivist General Lunebreach the Silent</p>
+  </blockquote>
+
+</details>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Document</th>
+      <th style="text-align: left">Numbers</th>
+      <th style="text-align: left">Sum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">manual-000</code></td>
+      <td style="text-align: left">8813, 1</td>
+      <td style="text-align: left">8814</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">nhxlhg-000</code></td>
+      <td style="text-align: left">8813, 1, 141</td>
+      <td style="text-align: left">8955</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">cfhob-141</code></td>
+      <td style="text-align: left">141, 5</td>
+      <td style="text-align: left">146</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">intmemo-424</code></td>
+      <td style="text-align: left">424, 999</td>
+      <td style="text-align: left">1423</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">top-secre-999</code></td>
+      <td style="text-align: left">999, 4, 141, 424, 8132, 2, 4</td>
+      <td style="text-align: left">9706</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Total sum <strong>29044</strong></p>
+
+<p>Entering the command</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ flag 29044
+</code></pre></div></div>
+<p>Will get you the second ⭐</p>
+<h2 id="-acquired-1">
+  
+  
+    <a href="#-acquired-1" class="anchor-heading" aria-labelledby="-acquired-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ⭐ Acquired.
+  
+  
+</h2>
 
           
 

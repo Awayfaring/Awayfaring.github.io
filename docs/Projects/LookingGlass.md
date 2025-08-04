@@ -2,6 +2,8 @@
 layout: default
 parent: Projects and Files
 title: Looking Glass
+nav_exclude: true
+search_exclude: true
 nav_order: 4
 ---
 # Looking Glass
