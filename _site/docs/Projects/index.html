@@ -13,10 +13,26 @@
 
   <style id="jtd-nav-activation">
   
-    .site-nav ul li a {
+
+    
+    .site-nav > ul.nav-list:first-child > li:not(:nth-child(3)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li a {
       background-image: none;
     }
 
+    .site-nav > ul.nav-list:not(:first-child) a,
+    .site-nav li.external a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > a {
+      font-weight: 600;
+      text-decoration: none;
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg {
+      transform: rotate(-90deg);
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list {
+      display: block;
+    }
   </style>
 
   
@@ -187,7 +203,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Problem1/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
+      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Feynman/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Projects and Files category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Projects/" class="nav-list-link">Projects and Files</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Projects/FileStuff/" class="nav-list-link">Relevant Files</a></li><li class="nav-list-item"><a href="/docs/Projects/Traceless/" class="nav-list-link">Traceless</a></li><li class="nav-list-item"><a href="/docs/Projects/Neuron/" class="nav-list-link">Neuron Imaging</a></li><li class="nav-list-item"><a href="/docs/Projects/LookingGlass/" class="nav-list-link">Looking Glass</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/docs/Puzzles/" class="nav-list-link">Puzzles</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in HackTheNorth CTF category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -249,7 +267,13 @@ document.addEventListener("DOMContentLoaded", function() {
       <div id="main-content" class="main-content">
         <main>
           
-            <p>This is going to be a compliation of some projects and files that are relevant to mes</p>
+            <h1 id="table-of-contents">
+  
+  
+    <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of Contents
+  
+  
+</h1>
 
           
 

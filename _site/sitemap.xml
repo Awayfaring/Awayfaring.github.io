@@ -7,6 +7,9 @@
 <loc>http://localhost:4000/docs/Puzzles/Jane%20Street/December24/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/Math/Feynman/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/Projects/FileStuff/</loc>
 </url>
 <url>
@@ -31,16 +34,10 @@
 <loc>http://localhost:4000/docs/Projects/Neuron/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/Math/Problem1/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/Projects/Traceless/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/Math/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/Puzzles/MIT%20Puzzle%20Hunt/</loc>
@@ -56,5 +53,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/Puzzles/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/Math/</loc>
 </url>
 </urlset>

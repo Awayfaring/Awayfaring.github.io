@@ -2,8 +2,7 @@
 layout: default
 parent: Projects and Files
 title: Neuron Imaging
-nav_exclude: true
-search_exclude: true
+
 nav_order: 3
 ---
 # Neuron Imaging
@@ -33,6 +32,7 @@ The github is unfortunately privated so I am unable to provide a link.
 
 In the "Original" image above there are 2 distinct colors, a bright green which is puromycin a protein, and a red which is neurofilament. 
 The researchers we worked with believed that in CMT neurons are not producing certain proteins which results in the very distinct "red" without any "green" around it. Our project which collaborated with these scientists was to create a method that highlighted where these faulty axons are, to use in other settings like calculating florescence. In the above image, the blue within the "processed image" is what our method highlighted.
+
 ---
 ### My Takeaways
 <details markdown="block">

@@ -3,8 +3,7 @@ layout: default
 parent: Projects and Files
 title: Traceless
 nav_order: 2
-nav_exclude: true
-search_exclude: true
+
 ---
 # Traceless
 ---
