@@ -11,7 +11,7 @@ nav_order: 4
 --- 
 ### Quick Introduction
 
-This was a project developed by me and 3 other people for a club at school. We sought to answer the question "How do people process images of strangers vs familiar people differently?". Over the course of a year we created the entire project, ran tests and gathered data, and presented our data at a research presentation at UW.
+This project was developed by me and 3 other people for a Synaptech, a club at UW. We sought to answer the question "How do people process images of strangers vs familiar people differently?". Over the course of a year we created a repeatable experiment, created/gathered the necessary hardware and software and ran tests to gather data. In the end we were able to cumulate our findings into a poster which we presented at a research symposium at UW.
 
 ---
 ### My Story

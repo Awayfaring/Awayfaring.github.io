@@ -12,7 +12,7 @@ nav_order: 2
 --- 
 ### Quick Introduction
 
-This was a project developed by me and some friends at a local hackathon, the theme was "Privacy and Security" and we developed a platform that allowed users to change or delete media metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy.
+This was a project developed between me and some friends at a local hackathon, the theme was "Privacy and Security" and we developed a platform that allowed users to change or delete media metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy.
 
 ---
 ### My Story
