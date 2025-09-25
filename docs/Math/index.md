@@ -1,9 +1,9 @@
 ---
 layout: home
 title: Math
-nav_order: 2
----
+nav_order: Math
 
+
+---
 # Table of Contents
 
-___
