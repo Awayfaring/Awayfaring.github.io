@@ -13,7 +13,7 @@ This lecture introduces us to Topology, we start by defining the **Open Ball**
 {% katexmm %}
 Let 
 $$a \in \mathbb{R}^n$$
-$$r \in \mathbb{R}$$
+$$r \in \mathbb{R}, \ r \geq 0$$
 We can define a **Ball** centered at $a$ with radius $r$ as 
 $$B(r,a)$$
 More formally (and since the ball is open)
@@ -81,6 +81,16 @@ We can denote the set of **boundary** points of $S$ as $$\boxed{\partial S}$$
 
 
 ---
+## Circling Back 
+With out new knowledge of **inteior**, **exterior**, and **boundary**.
+We can define Open and Closed Sets in a new manner
+\\
+An **Open** set is a set $S$ where
+$$ S = S^\text{int}$$
+A **Closed** set is a set $S$ where
+$$S = S^\text{int} \cup \delta S$$
+
+---
 ## Important Takeaways 
 
 Given a set $$S \subset \mathbb{R}^n$$ 
@@ -89,6 +99,7 @@ $$\forall x \in \mathbb{R}^n, x \in S^\text{int} \uplus (S^c)^\text{int} \uplus 
 {% endkatexmm %}
 
 --- 
+
 
 ## Visual
 
