@@ -27,16 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(2) > ul > li:nth-child(2) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > ul > li:nth-child(2) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(4) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(2) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(2) > ul > li:nth-child(2) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > ul > li:nth-child(2) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
       display: block;
     }
   </style>
@@ -89,24 +89,50 @@
   opacity: 1;
   font-size: 1.4em;
 }
-/* Mathematical variables with elegant italic styling */
-.katex .mathdefault,
-.katex .mathnormal {
+
+/* Mathematical variables with elegant italic styling - but preserve special fonts */
+.katex .mathdefault:not(.mathbb):not(.mathcal):not(.mathfrak):not(.mathscr),
+.katex .mathnormal:not(.mathbb):not(.mathcal):not(.mathfrak):not(.mathscr) {
   font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
   font-style: italic;
   font-weight: 400;
   transform: scaleX(1.1);
   display: inline-block;
 }
+
 /* Function names should be upright */
 .katex .mop.amsrm {
   font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
   font-style: normal;
   font-weight: 400;
 }
-/* Ensure good rendering for all math elements */
-.katex .mord {
+
+/* Regular math elements - but preserve special fonts */
+/* Only apply Times New Roman to alphabetic characters, not symbols */
+.katex .mathdefault[mathvariant="italic"],
+.katex .mathnormal[mathvariant="italic"],
+.katex .mord.mathdefault,
+.katex .mord.mathnormal {
   font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
+  font-style: italic;
+  font-weight: 400;
+  transform: scaleX(1.1);
+  display: inline-block;
+}
+
+/* Preserve all operators and symbols */
+.katex .mbin,
+.katex .mrel,
+.katex .mop,
+.katex .mpunct,
+.katex .mopen,
+.katex .mclose {
+  font-family: KaTeX_Main, serif !important;
+}
+
+/* Explicitly preserve blackboard bold and other special fonts */
+.katex .mathbb {
+  font-family: KaTeX_AMS, "Times New Roman", serif !important;
 }
 </style>
 
@@ -207,9 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <nav aria-label="Main" id="site-nav" class="site-nav">
   
   
-    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Feynman/" class="nav-list-link">Feynman Technique</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Projects and Files category" aria-pressed="false">
+    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Projects and Files category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/docs/Projects/" class="nav-list-link">Projects and Files</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Projects/FileStuff/" class="nav-list-link">Relevant Files</a></li><li class="nav-list-item"><a href="/docs/Projects/Traceless/" class="nav-list-link">Traceless</a></li><li class="nav-list-item"><a href="/docs/Projects/Neuron/" class="nav-list-link">Neuron Imaging</a></li><li class="nav-list-item"><a href="/docs/Projects/LookingGlass/" class="nav-list-link">Looking Glass</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Puzzles category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -219,7 +243,11 @@ document.addEventListener("DOMContentLoaded", function() {
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/docs/Puzzles/Jane%20Street/" class="nav-list-link">Jane Street Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/Jane%20Street/December24/" class="nav-list-link">Decemember 2024</a></li><li class="nav-list-item"><a href="/docs/Puzzles/Jane%20Street/June25/" class="nav-list-link">June 2024</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in MIT Aquarium Hunt Puzzles category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/" class="nav-list-link">MIT Aquarium Hunt Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/" class="nav-list-link">Aquarium Hunt 2013.</a></li></ul></li></ul></li></ul>
+      </button><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/" class="nav-list-link">MIT Aquarium Hunt Puzzles</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/MIT2013/" class="nav-list-link">Aquarium Hunt 2013.</a></li></ul></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Math/" class="nav-list-link">Math</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Feynman/" class="nav-list-link">Feynman Technique</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Math 334 Notes category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/Math/Math%20334%20Notes/" class="nav-list-link">Math 334 Notes</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/Math/Math%20334%20Notes/September24/" class="nav-list-link">September 24 Notes</a></li></ul></li></ul></li></ul>
   
 </nav>
 

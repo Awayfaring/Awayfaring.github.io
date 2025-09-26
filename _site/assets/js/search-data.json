@@ -202,81 +202,158 @@
     
     "relUrl": "/docs/Projects/Neuron/"
   },"29": {
+    "doc": "September 24 Notes",
+    "title": "Topology of Euclidean Space",
+    "content": ". ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#topology-of-euclidean-space",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#topology-of-euclidean-space"
+  },"30": {
+    "doc": "September 24 Notes",
+    "title": "Balls",
+    "content": "This lecture introduces us to Topology, we start by defining the Open Ball . Let a∈Rna \\in \\mathbb{R}^na∈Rn r∈Rr \\in \\mathbb{R}r∈R We can define a Ball centered at aaa with radius rrr as B(r,a)B(r,a)B(r,a) More formally (and since the ball is open) B(r,a)={x:∣x−a∣&lt;r}B(r,a) = \\{x: \\lvert x - a\\rvert &lt; r\\}B(r,a)={x:∣x−a∣&lt;r} Building off this idea we can represent a closed ball B‾(r,a)={x:∣x−a∣≤r}\\overline B(r,a) = \\{x: \\lvert x - a\\rvert \\leq r\\}B(r,a)={x:∣x−a∣≤r} . if n=1n = 1n=1 space, the open and closed balls represet the interval (a−r,a+r)(a - r, a + r)(a−r,a+r) and [a−r,a+r][a - r, a + r][a−r,a+r] respectively. ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#balls",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#balls"
+  },"31": {
+    "doc": "September 24 Notes",
+    "title": "Bounded Set",
+    "content": "We can use our previously defined balls to define certain types of sets. In this case we can call a set S⊆RnS \\subseteq \\mathbb{R}^nS⊆Rn bounded if ∃R∈R such that R&gt;0 and S⊆B(R,0)\\exists R \\in \\mathbb{R} \\text{ such that } R &gt; 0 \\text{ and } S \\subseteq B(R,0)∃R∈R such that R&gt;0 and S⊆B(R,0) Notice that it doesnt matter if we use a closed or open ball. If there was a case where S⊈B(R,0),S⊆B‾(R,0)S \\nsubseteq B(R,0), S \\subseteq \\overline B(R,0)S⊈B(R,0),S⊆B(R,0) then ∃δ&gt;0, S⊆B(R+δ,0)\\exists \\delta &gt; 0, \\ S \\subseteq B(R + \\delta, 0)∃δ&gt;0, S⊆B(R+δ,0) . Basically there is some δ&gt;0\\delta &gt; 0δ&gt;0 such that if I were to increase RRR by said δ\\deltaδ then S⊆B(R′,0)S \\subseteq B(R&#x27;,0)S⊆B(R′,0) where R′=R+δR&#x27; = R + \\deltaR′=R+δ . As a side note we should recognize that the complement of this set would be unbounded while we’re at it, I’ll formalize the definition of the complement as Sc={x:x∉S}=Rn∖SS^c = \\{x : x \\notin S\\} = \\mathbb{R}^n \\setminus SSc={x:x∈/​S}=Rn∖S . ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#bounded-set",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#bounded-set"
+  },"32": {
+    "doc": "September 24 Notes",
+    "title": "Interior",
+    "content": "Given a set S⊂RnS \\subset \\mathbb{R}^nS⊂Rn xxx in an interior point of SSS if for some r&gt;0r &gt; 0r&gt;0, the Ball centered at xxx with rrr radius is a subset of SSS. B(r,x)⊂SB(r,x) \\subset SB(r,x)⊂S We notate this as Sint\\boxed{S^{\\text{int}}}Sint​ . ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#interior",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#interior"
+  },"33": {
+    "doc": "September 24 Notes",
+    "title": "Exterior",
+    "content": "We can define exterior points in a similar way. Given a set S⊂RnS \\subset \\mathbb{R}^nS⊂Rn xxx is an exterior point of SSS if for some r&gt;0r &gt; 0r&gt;0, the Ball centered at xxx with rrr radius has no overlap with SSS B(r,x)∩S=∅B(r,x) \\cap S = \\emptysetB(r,x)∩S=∅ We can take this a slight step further, if our Ball has no overlap with SSS then that means it’s a subset of the complement, ScS^cSc. B(r,x)⊂ScB(r,x) \\subset S^cB(r,x)⊂Sc which means that it’s the “interior” of ScS^cSc, the complement of SSS. As such we can notate this as (Sc)int\\boxed{(S^c)^{\\text{int}}}(Sc)int​ . ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#exterior",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#exterior"
+  },"34": {
+    "doc": "September 24 Notes",
+    "title": "Boundary",
+    "content": "As the name suggests the boundary points for SSS exist “between” the sets of interior and exterior points of SSS. Formally, given a set S⊂RnS \\subset \\mathbb{R}^nS⊂Rn xxx is a boundary point of SSS if for all r&gt;0r &gt; 0r&gt;0 the Ball centered at xxx with radius rrr has overlap with both SSS and ScS^cSc B(r,x)∩S≠∅B(r,x) \\cap S \\neq \\emptysetB(r,x)∩S​=∅ B(r,x)∩Sc≠∅B(r,x) \\cap S^c \\neq \\emptysetB(r,x)∩Sc​=∅ We can denote the set of boundary points of SSS as ∂S\\boxed{\\partial S}∂S​ . ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#boundary",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#boundary"
+  },"35": {
+    "doc": "September 24 Notes",
+    "title": "Important Takeaways",
+    "content": "Given a set S⊂RnS \\subset \\mathbb{R}^nS⊂Rn Any point x∈Rnx \\in \\mathbb{R}^nx∈Rn is in either the interior, exterior or boundary. We can write this formally as ∀x∈Rn,x∈Sint⊎(Sc)int⊎δS\\forall x \\in \\mathbb{R}^n, x \\in S^\\text{int} \\uplus (S^c)^\\text{int} \\uplus \\delta S∀x∈Rn,x∈Sint⊎(Sc)int⊎δS . ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#important-takeaways",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#important-takeaways"
+  },"36": {
+    "doc": "September 24 Notes",
+    "title": "Visual",
+    "content": "Visual representation of interior, exterior and boundary. ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/#visual",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/#visual"
+  },"37": {
+    "doc": "September 24 Notes",
+    "title": "September 24 Notes",
+    "content": " ",
+    "url": "/docs/Math/Math%20334%20Notes/September24/",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/September24/"
+  },"38": {
     "doc": "Traceless",
     "title": "Traceless",
     "content": ". Link to project: Link . Quick Introduction . This was a project developed between me and some friends at a local hackathon, the theme was “Privacy and Security” and we developed a platform that allowed users to change or delete media metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy. My Story . Solution The “Traceless” project, showcases my capabilities in full-stack web engineering and AI integration. As a member of the team I conceived and built this platform to grant users greater control over their metadata. In addition we implemented functionality that identified and warned users about details in their images that could compromise their privacy. My process involved leveraging Flask for the backend and React for a dynamic frontend, ensuring a cohesive and intuitive UX. A significant aspect of my work was the development and integration of a PyTorch-based AI model designed for image analysis, accurately identifying key visual features that could potentially give away important information (like license plates, street signs etc.). This model enhances user safety and privacy by allowing precise metadata control across diverse media types. The inclusion of “Traceless” in this portfolio demonstrates my strength in developing comprehensive, user-centric web applications from conception to implementation, effectively bridging the gap between sophisticated AI models and practical user functionalities. It highlights my proficiency in Python, Flask, React, TypeScript, PyTorch, Figma, CSS, and HTML. ",
     "url": "/docs/Projects/Traceless/",
     
     "relUrl": "/docs/Projects/Traceless/"
-  },"30": {
-    "doc": "Home",
-    "title": "Welcome to my website!.",
-    "content": "This website is currently WIP I will be adding alot more stuff in the coming weeks. Hello! I’m Jeremy a Computer Science at University of Washington student passionate about building software for personal entertainment and to solve real world problems. In the past I was a Game Developer on Everlune, I led content updates for 3,000+ monthly players, gaining valuable experience in teamwork and user-focused design. These experiences reflect my drive to build smart, efficient systems that make an impact. At UW, I developed Python algorithms for neuron image analysis and noise reduction, improving data quality and processing efficiency. All with the goal of pushing research for CMT disease research . My recent projects explore AI/ML, including a PyTorch image analysis model (Traceless), a GPT-2 model built from scratch, and a face morphing and data sync system (Looking Glass). I’m also currently exploring low level computer science through learning Rust and circuit design, I hope to use these skills to optimize my projects in the future. ",
-    "url": "/#welcome-to-my-website",
-    
-    "relUrl": "/#welcome-to-my-website"
-  },"31": {
-    "doc": "Home",
-    "title": "Home",
-    "content": " ",
-    "url": "/",
-    
-    "relUrl": "/"
-  },"32": {
-    "doc": "MIT Aquarium Hunt Puzzles",
-    "title": "MIT Aquarium Hunt Puzzles",
-    "content": "Page with my approach/Solution to some of the MIT Aquarium puzzle hunt puzzles. ",
-    "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/",
-    
-    "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/"
-  },"33": {
-    "doc": "HackTheNorth CTF",
-    "title": "HackTheNorth CTF",
-    "content": "Page with (some of) the solutions for HackTheNorth’s 2025 CTF. If you wish to try the CTF for yourself you should check out this Video to get started! . ",
-    "url": "/docs/Puzzles/HTN%20CTF/",
-    
-    "relUrl": "/docs/Puzzles/HTN%20CTF/"
-  },"34": {
+  },"39": {
     "doc": "Projects and Files",
     "title": "Table of Contents",
     "content": " ",
     "url": "/docs/Projects/#table-of-contents",
     
     "relUrl": "/docs/Projects/#table-of-contents"
-  },"35": {
+  },"40": {
     "doc": "Projects and Files",
     "title": "Projects and Files",
     "content": " ",
     "url": "/docs/Projects/",
     
     "relUrl": "/docs/Projects/"
-  },"36": {
+  },"41": {
     "doc": "Jane Street Puzzles",
     "title": "Jane Street Puzzles",
     "content": "Page with my approach/Solution to some Jane Street Puzzles . ",
     "url": "/docs/Puzzles/Jane%20Street/",
     
     "relUrl": "/docs/Puzzles/Jane%20Street/"
-  },"37": {
+  },"42": {
     "doc": "Puzzles",
     "title": "Puzzles",
     "content": "This is going to be a list of puzzle write ups I did. (Big spoilers) Every writeup should have the puzzle link attached!. ",
     "url": "/docs/Puzzles/",
     
     "relUrl": "/docs/Puzzles/"
-  },"38": {
+  },"43": {
+    "doc": "MIT Aquarium Hunt Puzzles",
+    "title": "MIT Aquarium Hunt Puzzles",
+    "content": "Page with my approach/Solution to some of the MIT Aquarium puzzle hunt puzzles. ",
+    "url": "/docs/Puzzles/MIT%20Puzzle%20Hunt/",
+    
+    "relUrl": "/docs/Puzzles/MIT%20Puzzle%20Hunt/"
+  },"44": {
+    "doc": "Home",
+    "title": "Welcome to my website!.",
+    "content": "This website is currently WIP I will be adding alot more stuff in the coming weeks. Hello! I’m Jeremy a Computer Science at University of Washington student passionate about building software for personal entertainment and to solve real world problems. In the past I was a Game Developer on Everlune, I led content updates for 3,000+ monthly players, gaining valuable experience in teamwork and user-focused design. These experiences reflect my drive to build smart, efficient systems that make an impact. At UW, I developed Python algorithms for neuron image analysis and noise reduction, improving data quality and processing efficiency. All with the goal of pushing research for CMT disease research . My recent projects explore AI/ML, including a PyTorch image analysis model (Traceless), a GPT-2 model built from scratch, and a face morphing and data sync system (Looking Glass). I’m also currently exploring low level computer science through learning Rust and circuit design, I hope to use these skills to optimize my projects in the future. ",
+    "url": "/#welcome-to-my-website",
+    
+    "relUrl": "/#welcome-to-my-website"
+  },"45": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"46": {
     "doc": "Math",
     "title": "Table of Contents",
-    "content": ". ",
+    "content": " ",
     "url": "/docs/Math/#table-of-contents",
     
     "relUrl": "/docs/Math/#table-of-contents"
-  },"39": {
+  },"47": {
     "doc": "Math",
     "title": "Math",
     "content": " ",
     "url": "/docs/Math/",
     
     "relUrl": "/docs/Math/"
+  },"48": {
+    "doc": "Math 334 Notes",
+    "title": "Table of Contents",
+    "content": "My Notes for the UW’s Math 334. ",
+    "url": "/docs/Math/Math%20334%20Notes/#table-of-contents",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/#table-of-contents"
+  },"49": {
+    "doc": "Math 334 Notes",
+    "title": "Math 334 Notes",
+    "content": " ",
+    "url": "/docs/Math/Math%20334%20Notes/",
+    
+    "relUrl": "/docs/Math/Math%20334%20Notes/"
+  },"50": {
+    "doc": "HackTheNorth CTF",
+    "title": "HackTheNorth CTF",
+    "content": "Page with (some of) the solutions for HackTheNorth’s 2025 CTF. If you wish to try the CTF for yourself you should check out this Video to get started! . ",
+    "url": "/docs/Puzzles/HTN%20CTF/",
+    
+    "relUrl": "/docs/Puzzles/HTN%20CTF/"
   }
 }

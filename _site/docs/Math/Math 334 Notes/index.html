@@ -14,9 +14,10 @@
   <style id="jtd-nav-activation">
   
 
+    .site-nav > ul.nav-list:first-child > li > a,
     
-    .site-nav > ul.nav-list:first-child > li:not(:nth-child(3)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(2)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -25,12 +26,14 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(2) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(4) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(4) > ul > li:nth-child(2) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(4) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
       display: block;
     }
   </style>
@@ -50,20 +53,20 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Puzzles | Jeremy’s Website</title>
+<title>Math 334 Notes | Jeremy’s Website</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Puzzles" />
+<meta property="og:title" content="Math 334 Notes" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A website compiling some personal projects and some other things." />
 <meta property="og:description" content="A website compiling some personal projects and some other things." />
-<link rel="canonical" href="http://localhost:4000/docs/Puzzles/" />
-<meta property="og:url" content="http://localhost:4000/docs/Puzzles/" />
+<link rel="canonical" href="http://localhost:4000/docs/Math/Math%20334%20Notes/" />
+<meta property="og:url" content="http://localhost:4000/docs/Math/Math%20334%20Notes/" />
 <meta property="og:site_name" content="Jeremy’s Website" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Puzzles" />
+<meta property="twitter:title" content="Math 334 Notes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A website compiling some personal projects and some other things.","headline":"Puzzles","url":"http://localhost:4000/docs/Puzzles/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A website compiling some personal projects and some other things.","headline":"Math 334 Notes","url":"http://localhost:4000/docs/Math/Math%20334%20Notes/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -291,12 +294,26 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
     <div class="main-content-wrap">
-      
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+    <li class="breadcrumb-nav-list-item"><a href="/docs/Math/">Math</a></li>
+    <li class="breadcrumb-nav-list-item"><span>Math 334 Notes</span></li>
+  </ol>
+</nav>
+
+
       <div id="main-content" class="main-content">
         <main>
           
-            <p>This is going to be a list of puzzle write ups I did. (Big spoilers)
-Every writeup should have the puzzle link attached!.</p>
+            <h1 id="table-of-contents">
+  
+  
+    <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of Contents
+  
+  
+</h1>
+    
+<p>My Notes for the UW’s Math 334.</p>
 
           
 
@@ -307,15 +324,7 @@ Every writeup should have the puzzle link attached!.</p>
 <ul>
   
   <li>
-    <a href="/docs/Puzzles/HTN%20CTF/">HackTheNorth CTF</a>
-  </li>
-  
-  <li>
-    <a href="/docs/Puzzles/Jane%20Street/">Jane Street Puzzles</a>
-  </li>
-  
-  <li>
-    <a href="/docs/Puzzles/MIT%20Puzzle%20Hunt/">MIT Aquarium Hunt Puzzles</a>
+    <a href="/docs/Math/Math%20334%20Notes/September24/">September 24 Notes</a>
   </li>
   
 </ul>
@@ -336,7 +345,7 @@ Every writeup should have the puzzle link attached!.</p>
         
         
           <p class="text-small text-grey-dk-000 mb-0">
-            <a href="https://github.com/Awayfaring/Awayfaring.github.io/tree/main/docs/Puzzles/index.md" id="edit-this-page">Edit this page on GitHub</a>
+            <a href="https://github.com/Awayfaring/Awayfaring.github.io/tree/main/docs/Math/Math 334 Notes/index.md" id="edit-this-page">Edit this page on GitHub</a>
           </p>
         
       </div>

@@ -14,24 +14,50 @@
   opacity: 1;
   font-size: 1.4em;
 }
-/* Mathematical variables with elegant italic styling */
-.katex .mathdefault,
-.katex .mathnormal {
+
+/* Mathematical variables with elegant italic styling - but preserve special fonts */
+.katex .mathdefault:not(.mathbb):not(.mathcal):not(.mathfrak):not(.mathscr),
+.katex .mathnormal:not(.mathbb):not(.mathcal):not(.mathfrak):not(.mathscr) {
   font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
   font-style: italic;
   font-weight: 400;
   transform: scaleX(1.1);
   display: inline-block;
 }
+
 /* Function names should be upright */
 .katex .mop.amsrm {
   font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
   font-style: normal;
   font-weight: 400;
 }
-/* Ensure good rendering for all math elements */
-.katex .mord {
+
+/* Regular math elements - but preserve special fonts */
+/* Only apply Times New Roman to alphabetic characters, not symbols */
+.katex .mathdefault[mathvariant="italic"],
+.katex .mathnormal[mathvariant="italic"],
+.katex .mord.mathdefault,
+.katex .mord.mathnormal {
   font-family: "Times New Roman", "Liberation Serif", "DejaVu Serif", serif !important;
+  font-style: italic;
+  font-weight: 400;
+  transform: scaleX(1.1);
+  display: inline-block;
+}
+
+/* Preserve all operators and symbols */
+.katex .mbin,
+.katex .mrel,
+.katex .mop,
+.katex .mpunct,
+.katex .mopen,
+.katex .mclose {
+  font-family: KaTeX_Main, serif !important;
+}
+
+/* Explicitly preserve blackboard bold and other special fonts */
+.katex .mathbb {
+  font-family: KaTeX_AMS, "Times New Roman", serif !important;
 }
 </style>
 
